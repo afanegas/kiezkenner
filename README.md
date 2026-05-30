@@ -2,6 +2,8 @@
 
 **KiezKenner** is an interactive, web-based geography learning game for Berlin's districts, neighborhoods, planning areas, stations, and streets.
 
+🔗 **Live Demo**: [kiezkenner.vercel.app](https://kiezkenner.vercel.app/)
+
 Built with **MapLibre GL JS**, **Turf.js**, and **Vite**.
 
 ---
@@ -55,3 +57,9 @@ Make sure you have [Node.js](https://nodejs.org/) installed.
    ```bash
    npm run build
    ```
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
