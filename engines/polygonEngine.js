@@ -9,8 +9,8 @@ export const polygonEngine = {
 
   async loadData(gameMode, regionId, customTargets, regionMap) {
     const url = gameMode === 'ortsteile' 
-      ? './public/lor_ortsteile.geojson' 
-      : './public/lor_2021_a_lor_plr_2021_WGS84.geojson';
+      ? './lor_ortsteile.geojson' 
+      : './lor_2021_a_lor_plr_2021_WGS84.geojson';
     
     const response = await fetch(url);
     const data = await response.json();

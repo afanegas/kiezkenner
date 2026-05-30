@@ -22,12 +22,12 @@ export const streetEngine = {
     } else {
       if (regionId === 'radius') {
         if (!cachedMasterData) {
-          const resp = await fetch('./public/berlin_streets.geojson');
+          const resp = await fetch('./berlin_streets.geojson');
           cachedMasterData = await resp.json();
         }
         data = cachedMasterData;
       } else {
-        const url = `./public/streets_${regionId}.geojson`;
+        const url = `./streets_${regionId}.geojson`;
         const resp = await fetch(url);
         data = await resp.json();
       }

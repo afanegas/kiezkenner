@@ -370,7 +370,7 @@ map.on('load', () => {
   });
 
   // Fetch Bezirksgrenzen
-  fetch('./public/bezirksgrenzen.geojson')
+  fetch('./bezirksgrenzen.geojson')
     .then(resp => resp.json())
     .then(data => { map.getSource('bezirke').setData(data); })
     .catch(err => console.error("Could not load bezirksgrenzen.geojson", err));

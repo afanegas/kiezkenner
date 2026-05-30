@@ -40,8 +40,8 @@ export const pointEngine = {
 
   async loadData(gameMode, regionId, customTargets, regionMap) {
     const url = gameMode === 'quartier'
-      ? './public/quartier_berlin.geojson'
-      : './public/berlin_stations.geojson';
+      ? './quartier_berlin.geojson'
+      : './berlin_stations.geojson';
 
     const response = await fetch(url);
     const data = await response.json();
@@ -49,7 +49,7 @@ export const pointEngine = {
     // If it's stations, we need bezirk data for spatial join
     if (gameMode === 'stations') {
       if (!bezirkDataCache) {
-        const bezirkResp = await fetch('./public/bezirksgrenzen.geojson');
+        const bezirkResp = await fetch('./bezirksgrenzen.geojson');
         bezirkDataCache = await bezirkResp.json();
       }
 
