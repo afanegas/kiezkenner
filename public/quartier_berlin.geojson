@@ -1,0 +1,3971 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-05-01T14:16:33Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/29885013",
+        "name": "Biesdorf-Nord",
+        "place": "quarter",
+        "OTEIL": "Biesdorf-Nord",
+        "BEZIRK": "Marzahn-Hellersdorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5554059,
+          52.5236213
+        ]
+      },
+      "id": "node/29885013"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/33784937",
+        "name": "Tegelort",
+        "place": "quarter",
+        "OTEIL": "Tegelort",
+        "BEZIRK": "Reinickendorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2295251,
+          52.5722155
+        ]
+      },
+      "id": "node/33784937"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/151013210",
+        "name": "Biesdorf-Süd",
+        "place": "quarter",
+        "OTEIL": "Biesdorf-Süd",
+        "BEZIRK": "Marzahn-Hellersdorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5606634,
+          52.4985344
+        ]
+      },
+      "id": "node/151013210"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/159750674",
+        "name": "Schönholz",
+        "place": "quarter",
+        "OTEIL": "Schönholz",
+        "BEZIRK": "Pankow"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3806375,
+          52.5748176
+        ]
+      },
+      "id": "node/159750674"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/164030102",
+        "alt_name": "Zehlendorf-Süd",
+        "is_in": "Berlin,Bundesrepublik Deutschland,Europe",
+        "name": "Schönow",
+        "place": "quarter",
+        "wikidata": "Q870611",
+        "wikipedia": "de:Schönow (Zehlendorf)",
+        "OTEIL": "Schönow",
+        "BEZIRK": "Steglitz-Zehlendorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2707131,
+          52.410827
+        ]
+      },
+      "id": "node/164030102"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/539360863",
+        "is_in": "Mitte,Berlin,Bundesrepublik Deutschland,Europe",
+        "name": "Dorotheenstadt",
+        "place": "quarter",
+        "wikidata": "Q677514",
+        "wikimedia_commons": "Category:Berlin-Dorotheenstadt",
+        "wikipedia": "de:Berlin-Dorotheenstadt",
+        "OTEIL": "Dorotheenstadt",
+        "BEZIRK": "Mitte"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3884475,
+          52.5186609
+        ]
+      },
+      "id": "node/539360863"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/539362369",
+        "name": "Friedrichstadt",
+        "place": "quarter",
+        "wikidata": "Q706005",
+        "wikimedia_commons": "Category:Friedrichstadt (Berlin)",
+        "wikipedia": "de:Berlin-Friedrichstadt",
+        "OTEIL": "Friedrichstadt",
+        "BEZIRK": "Mitte"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3899039,
+          52.5097492
+        ]
+      },
+      "id": "node/539362369"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/539362678",
+        "historic:place": "suburb",
+        "name": "Luisenstadt",
+        "old_name": "Köpenicker Vorstadt",
+        "place": "quarter",
+        "OTEIL": "Luisenstadt",
+        "BEZIRK": "Mitte"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4158801,
+          52.5071836
+        ]
+      },
+      "id": "node/539362678"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/539368274",
+        "historic:place": "suburb",
+        "name": "Spandauer Vorstadt",
+        "place": "quarter",
+        "wikidata": "Q321016",
+        "wikimedia_commons": "Category:Spandauer Vorstadt",
+        "wikipedia": "de:Spandauer Vorstadt",
+        "OTEIL": "Spandauer Vorstadt",
+        "BEZIRK": "Mitte"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3995437,
+          52.5257512
+        ]
+      },
+      "id": "node/539368274"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/634105666",
+        "is_in": "Steglitz-Zehlendorf,Berlin,Bundesrepublik Deutschland,Europe",
+        "name": "Giesensdorf",
+        "place": "quarter",
+        "wikidata": "Q1327074",
+        "wikipedia": "de:Giesensdorf (Lichterfelde)",
+        "OTEIL": "Giesensdorf",
+        "BEZIRK": "Steglitz-Zehlendorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3111947,
+          52.4210907
+        ]
+      },
+      "id": "node/634105666"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1773347994",
+        "alt_name": "Skandinavisches Viertel",
+        "loc_name": "Arnimkiez",
+        "name": "Nordisches Viertel",
+        "place": "quarter",
+        "OTEIL": "Nordisches Viertel",
+        "BEZIRK": "Pankow"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4072901,
+          52.5523653
+        ]
+      },
+      "id": "node/1773347994"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1804865341",
+        "name": "Donaukiez",
+        "name:ja": "ドナウキーツ",
+        "place": "quarter",
+        "population": "7818",
+        "website": "https://www.donaustrasse-nord.de/",
+        "OTEIL": "Donaukiez",
+        "BEZIRK": "Neukölln"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4338689,
+          52.4835032
+        ]
+      },
+      "id": "node/1804865341"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1804865347",
+        "name": "Flughafenkiez",
+        "place": "quarter",
+        "population": "8613",
+        "website": "http://www.qm-flughafenstrasse.de/",
+        "OTEIL": "Flughafenkiez",
+        "BEZIRK": "Neukölln"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4299452,
+          52.4816604
+        ]
+      },
+      "id": "node/1804865347"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1804865359",
+        "name": "Kungerkiez",
+        "place": "quarter",
+        "website": "https://kungerkiez.de/",
+        "OTEIL": "Kungerkiez",
+        "BEZIRK": "Treptow-Köpenick"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4473739,
+          52.4901999
+        ]
+      },
+      "id": "node/1804865359"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1804865368",
+        "name": "Reuterkiez",
+        "place": "quarter",
+        "population": "18500",
+        "website": "https://www.reuter-quartier.de/",
+        "wikidata": "Q2146657",
+        "wikipedia": "de:Reuterkiez",
+        "OTEIL": "Reuterkiez",
+        "BEZIRK": "Neukölln"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4296256,
+          52.4894373
+        ]
+      },
+      "id": "node/1804865368"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1922499184",
+        "name": "Komponistenviertel",
+        "place": "quarter",
+        "wikidata": "Q1587854",
+        "wikimedia_commons": "Category:Komponistenviertel (Berlin-Weißensee)",
+        "wikipedia": "de:Komponistenviertel (Berlin-Weißensee)",
+        "OTEIL": "Komponistenviertel",
+        "BEZIRK": "Pankow"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4576533,
+          52.5483207
+        ]
+      },
+      "id": "node/1922499184"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2404944660",
+        "name": "Mahlsdorf Nord",
+        "place": "quarter",
+        "OTEIL": "Mahlsdorf Nord",
+        "BEZIRK": "Marzahn-Hellersdorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.6316579,
+          52.5229728
+        ]
+      },
+      "id": "node/2404944660"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2404950642",
+        "name": "Mahlsdorf Süd",
+        "place": "quarter",
+        "OTEIL": "Mahlsdorf Süd",
+        "BEZIRK": "Marzahn-Hellersdorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.611831,
+          52.4876545
+        ]
+      },
+      "id": "node/2404950642"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2752426709",
+        "alt_name": "Sparrplatz-Quartier",
+        "is_in:city": "Berlin",
+        "is_in:country": "Germany",
+        "is_in:country_code": "DE",
+        "is_in:suburb": "Wedding",
+        "name": "Sprengelkiez",
+        "place": "quarter",
+        "wikidata": "Q2313629",
+        "wikipedia": "de:Sprengelkiez",
+        "OTEIL": "Sprengelkiez",
+        "BEZIRK": "Mitte"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3569798,
+          52.542215
+        ]
+      },
+      "id": "node/2752426709"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3123699877",
+        "alt_name": "Schwabylon",
+        "name": "Kollwitzkiez",
+        "place": "quarter",
+        "OTEIL": "Kollwitzkiez",
+        "BEZIRK": "Pankow"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4189248,
+          52.5345764
+        ]
+      },
+      "id": "node/3123699877"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3652643275",
+        "is_in:city": "Berlin",
+        "is_in:country": "Germany",
+        "is_in:country_code": "DE",
+        "is_in:suburb": "Wedding",
+        "name": "Afrikanisches Viertel",
+        "place": "quarter",
+        "wikidata": "Q387659",
+        "wikimedia_commons": "Category:Afrikanisches Viertel",
+        "wikipedia": "de:Afrikanisches Viertel",
+        "OTEIL": "Afrikanisches Viertel",
+        "BEZIRK": "Mitte"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3393266,
+          52.5542841
+        ]
+      },
+      "id": "node/3652643275"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3652643276",
+        "alt_name": "Belgisches Viertel",
+        "is_in:city": "Berlin",
+        "is_in:country": "Germany",
+        "is_in:country_code": "DE",
+        "is_in:suburb": "Wedding",
+        "name": "Brüsseler Kiez",
+        "place": "quarter",
+        "wikidata": "Q997139",
+        "wikipedia": "de:Brüsseler Kiez",
+        "OTEIL": "Brüsseler Kiez",
+        "BEZIRK": "Mitte"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3519756,
+          52.5463445
+        ]
+      },
+      "id": "node/3652643276"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3652643277",
+        "alt_name": "Osramkiez",
+        "is_in:city": "Berlin",
+        "is_in:country": "Germany",
+        "is_in:country_code": "DE",
+        "is_in:suburb": "Wedding",
+        "name": "Leopoldkiez",
+        "place": "quarter",
+        "OTEIL": "Leopoldkiez",
+        "BEZIRK": "Mitte"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3609173,
+          52.5515133
+        ]
+      },
+      "id": "node/3652643277"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3797582176",
+        "name": "Kaulsdorf Süd",
+        "place": "quarter",
+        "OTEIL": "Kaulsdorf Süd",
+        "BEZIRK": "Marzahn-Hellersdorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5770594,
+          52.4935443
+        ]
+      },
+      "id": "node/3797582176"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4794919616",
+        "name": "Schillerkiez",
+        "place": "quarter",
+        "population": "20254",
+        "wikidata": "Q1167898",
+        "wikipedia": "de:Schillerpromenade",
+        "OTEIL": "Schillerkiez",
+        "BEZIRK": "Neukölln"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4222776,
+          52.4764958
+        ]
+      },
+      "id": "node/4794919616"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5217773042",
+        "name": "Südende",
+        "place": "quarter",
+        "wikidata": "Q821149",
+        "wikipedia": "de:Berlin-Südende",
+        "OTEIL": "Südende",
+        "BEZIRK": "Steglitz-Zehlendorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3536673,
+          52.4495757
+        ]
+      },
+      "id": "node/5217773042"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5403335362",
+        "name": "Weiße Siedlung",
+        "place": "quarter",
+        "population": "4300",
+        "start_date": "1970s",
+        "OTEIL": "Weiße Siedlung",
+        "BEZIRK": "Neukölln"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4656548,
+          52.4740602
+        ]
+      },
+      "id": "node/5403335362"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5981543142",
+        "name": "Schweizer Viertel",
+        "place": "quarter",
+        "wikidata": "Q2256365",
+        "wikipedia": "de:Schweizer Viertel (Berlin-Lichterfelde)",
+        "OTEIL": "Schweizer Viertel",
+        "BEZIRK": "Steglitz-Zehlendorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2967283,
+          52.4257147
+        ]
+      },
+      "id": "node/5981543142"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6033605691",
+        "alt_name": "Fliegerviertel",
+        "name": "Gartenstadt Neu-Tempelhof",
+        "place": "quarter",
+        "source": "https://de.wikipedia.org/wiki/Datei:Karte_Neu-Tempelhof.png",
+        "wikipedia": "de:Neu-Tempelhof#Gartenstadt Neu-Tempelhof – Bereich B",
+        "OTEIL": "Gartenstadt Neu-Tempelhof",
+        "BEZIRK": "Tempelhof-Schöneberg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3813229,
+          52.476357
+        ]
+      },
+      "id": "node/6033605691"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6313592834",
+        "name": "Stralau",
+        "place": "quarter",
+        "wikidata": "Q821148",
+        "wikipedia": "de:Berlin-Stralau",
+        "OTEIL": "Stralau",
+        "BEZIRK": "Friedrichshain-Kreuzberg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4711809,
+          52.4950522
+        ]
+      },
+      "id": "node/6313592834"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6610516354",
+        "name": "Dammvorstadt",
+        "place": "quarter",
+        "wikidata": "Q1158675",
+        "wikipedia": "de:Dammvorstadt (Köpenick)",
+        "OTEIL": "Dammvorstadt",
+        "BEZIRK": "Treptow-Köpenick"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5766447,
+          52.4549323
+        ]
+      },
+      "id": "node/6610516354"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7342844217",
+        "name": "Grüne Stadt",
+        "place": "quarter",
+        "wikidata": "Q26254937",
+        "wikipedia": "de:Grüne Stadt",
+        "OTEIL": "Grüne Stadt",
+        "BEZIRK": "Pankow"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4391909,
+          52.535497
+        ]
+      },
+      "id": "node/7342844217"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7342844218",
+        "alt_name": "Winskiez",
+        "name": "Winsviertel",
+        "place": "quarter",
+        "wikidata": "Q2230351",
+        "wikipedia": "de:Winsviertel",
+        "OTEIL": "Winsviertel",
+        "BEZIRK": "Pankow"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4257148,
+          52.5344232
+        ]
+      },
+      "id": "node/7342844218"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7342877854",
+        "alt_name": "Bötzowviertel",
+        "name": "Bötzowkiez",
+        "place": "quarter",
+        "wikidata": "Q1020181",
+        "wikipedia": "de:Bötzowviertel",
+        "OTEIL": "Bötzowkiez",
+        "BEZIRK": "Pankow"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4343307,
+          52.5319119
+        ]
+      },
+      "id": "node/7342877854"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7342896740",
+        "name": "Hausburgviertel",
+        "place": "quarter",
+        "OTEIL": "Hausburgviertel",
+        "BEZIRK": "Friedrichshain-Kreuzberg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4528422,
+          52.5235608
+        ]
+      },
+      "id": "node/7342896740"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7342896741",
+        "alt_name": "Samariterkiez",
+        "name": "Samariterviertel",
+        "place": "quarter",
+        "wikidata": "Q879307",
+        "wikimedia_commons": "Category:Samariterviertel",
+        "wikipedia": "de:Samariterviertel",
+        "OTEIL": "Samariterviertel",
+        "BEZIRK": "Friedrichshain-Kreuzberg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4655019,
+          52.5172826
+        ]
+      },
+      "id": "node/7342896741"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7713197641",
+        "alt_name": "Wendisch-Stolpe",
+        "name": "Stolpe (Wannsee)",
+        "old_name": "Stolpeken",
+        "place": "quarter",
+        "wikidata": "Q824415",
+        "wikimedia_commons": "Category:Stolpe (Berlin)",
+        "wikipedia": "de:Stolpe (Wannsee)",
+        "OTEIL": "Stolpe (Wannsee)",
+        "BEZIRK": "Steglitz-Zehlendorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.1413889,
+          52.4125
+        ]
+      },
+      "id": "node/7713197641"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7728505225",
+        "name": "Gleimviertel",
+        "place": "quarter",
+        "wikidata": "Q1530441",
+        "wikipedia": "de:Gleimviertel",
+        "OTEIL": "Gleimviertel",
+        "BEZIRK": "Pankow"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4076092,
+          52.5472703
+        ]
+      },
+      "id": "node/7728505225"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7775729029",
+        "name": "Rote Insel",
+        "place": "quarter",
+        "wikidata": "Q464401",
+        "wikipedia": "de:Rote Insel",
+        "OTEIL": "Rote Insel",
+        "BEZIRK": "Tempelhof-Schöneberg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3617755,
+          52.4830737
+        ]
+      },
+      "id": "node/7775729029"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9276123824",
+        "name": "Heerstraße Nord",
+        "name:etymology:wikidata": "Q94863",
+        "place": "quarter",
+        "population": "28000",
+        "population:date": "2015-12",
+        "source:population": "Amt für Statistik Berlin-Brandenburg",
+        "wikidata": "Q28595258",
+        "wikipedia": "de:Heerstraße Nord",
+        "OTEIL": "Heerstraße Nord",
+        "BEZIRK": "Spandau"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.1630709,
+          52.5216282
+        ]
+      },
+      "id": "node/9276123824"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9422289198",
+        "name": "Englisches Viertel",
+        "place": "quarter",
+        "wikidata": "Q21978080",
+        "wikimedia_commons": "Category:Englisches Viertel (Berlin-Wedding)",
+        "wikipedia": "de:Englisches Viertel (Berlin)",
+        "OTEIL": "Englisches Viertel",
+        "BEZIRK": "Mitte"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3453191,
+          52.5577014
+        ]
+      },
+      "id": "node/9422289198"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9735752813",
+        "alt_name": "LSD-Viertel",
+        "name": "Helmholtzkiez",
+        "place": "quarter",
+        "wikidata": "Q1603255",
+        "wikipedia": "de:Helmholtzkiez",
+        "OTEIL": "Helmholtzkiez",
+        "BEZIRK": "Pankow"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4190319,
+          52.5430391
+        ]
+      },
+      "id": "node/9735752813"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10783728185",
+        "name": "Bismarckviertel",
+        "place": "quarter",
+        "wikidata": "Q866589",
+        "wikipedia": "de:Bismarckviertel Steglitz",
+        "OTEIL": "Bismarckviertel",
+        "BEZIRK": "Steglitz-Zehlendorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3383753,
+          52.4624215
+        ]
+      },
+      "id": "node/10783728185"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11033146684",
+        "name": "Europacity",
+        "place": "quarter",
+        "wikidata": "Q1375310",
+        "wikimedia_commons": "Category:Europacity",
+        "wikipedia": "de:Europacity",
+        "OTEIL": "Europacity",
+        "BEZIRK": "Mitte"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3691898,
+          52.5288986
+        ]
+      },
+      "id": "node/11033146684"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11139437503",
+        "name": "Tiroler Viertel",
+        "name:etymology:wikidata": "Q153809",
+        "place": "quarter",
+        "wikidata": "Q2436303",
+        "wikipedia": "de:Tiroler Viertel",
+        "OTEIL": "Tiroler Viertel",
+        "BEZIRK": "Pankow"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4071237,
+          52.5602654
+        ]
+      },
+      "id": "node/11139437503"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11139487334",
+        "alt_name": "Wohnkomplex Greifswalder Straße",
+        "loc_name": "Mühlenkiez",
+        "name": "Mühlenviertel",
+        "place": "quarter",
+        "OTEIL": "Mühlenviertel",
+        "BEZIRK": "Pankow"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.447215,
+          52.5422576
+        ]
+      },
+      "id": "node/11139487334"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11278915489",
+        "alt_name": "Rosenthalsches Viertel",
+        "name": "Komponistenviertel",
+        "place": "quarter",
+        "OTEIL": "Komponistenviertel",
+        "BEZIRK": "Steglitz-Zehlendorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3340991,
+          52.4385662
+        ]
+      },
+      "id": "node/11278915489"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11766600159",
+        "alt_name": "Marzahn-Nordwest",
+        "name": "Berlin-Ahrensfelde",
+        "official_name": "Marzahn-Nord",
+        "place": "quarter",
+        "OTEIL": "Berlin-Ahrensfelde",
+        "BEZIRK": "Marzahn-Hellersdorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5671866,
+          52.5690808
+        ]
+      },
+      "id": "node/11766600159"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12064869617",
+        "name": "Salvador-Allende-Viertel II",
+        "place": "quarter",
+        "short_name": "Allende-Viertel II",
+        "wikidata": "Q2215547",
+        "OTEIL": "Salvador-Allende-Viertel II",
+        "BEZIRK": "Treptow-Köpenick"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.6014895,
+          52.4399712
+        ]
+      },
+      "id": "node/12064869617"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12065129606",
+        "alt_name": "Stadtrandsieldung Kietzer Feld",
+        "name": "Kietzer Feld",
+        "place": "quarter",
+        "OTEIL": "Kietzer Feld",
+        "BEZIRK": "Treptow-Köpenick"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5892053,
+          52.4325579
+        ]
+      },
+      "id": "node/12065129606"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12066173019",
+        "name": "Dammfeld",
+        "place": "quarter",
+        "OTEIL": "Dammfeld",
+        "BEZIRK": "Treptow-Köpenick"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5777159,
+          52.4629224
+        ]
+      },
+      "id": "node/12066173019"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12066355907",
+        "alt_name": "Stralauer Kiez",
+        "name": "Rudolfkiez",
+        "place": "quarter",
+        "website": "https://www.berlin.de/special/stadtteile/friedrichshain/898954-5170813-rudolf-stralauer-kiez.html",
+        "wikidata": "Q1252332",
+        "wikipedia": "de:Rudolfkiez",
+        "OTEIL": "Rudolfkiez",
+        "BEZIRK": "Friedrichshain-Kreuzberg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4578935,
+          52.5007995
+        ]
+      },
+      "id": "node/12066355907"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12076941363",
+        "name": "Kosmosviertel",
+        "place": "quarter",
+        "wikidata": "Q97506311",
+        "wikipedia": "de:Kosmosviertel",
+        "OTEIL": "Kosmosviertel",
+        "BEZIRK": "Treptow-Köpenick"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.525709,
+          52.4029568
+        ]
+      },
+      "id": "node/12076941363"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12095712104",
+        "alt_name": "Seenviertel",
+        "name": "Prinzenviertel",
+        "place": "quarter",
+        "wikidata": "Q1323202",
+        "wikipedia": "de:Prinzenviertel",
+        "OTEIL": "Prinzenviertel",
+        "BEZIRK": "Lichtenberg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5193414,
+          52.4810623
+        ]
+      },
+      "id": "node/12095712104"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12095976198",
+        "name": "Weitlingkiez",
+        "place": "quarter",
+        "wikidata": "Q2556678",
+        "wikipedia": "de:Weitlingkiez",
+        "OTEIL": "Weitlingkiez",
+        "BEZIRK": "Lichtenberg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4999573,
+          52.5054591
+        ]
+      },
+      "id": "node/12095976198"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12387904998",
+        "name": "Landstadt Gatow",
+        "place": "quarter",
+        "OTEIL": "Landstadt Gatow",
+        "BEZIRK": "Spandau"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.1290927,
+          52.4729959
+        ]
+      },
+      "id": "node/12387904998"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12535154660",
+        "alt_name": "Buckower Damm-Süd",
+        "name": "Buckow 1",
+        "place": "quarter",
+        "wikidata": "Q644410",
+        "wikipedia": "de:Berlin-Buckow",
+        "OTEIL": "Buckow 1",
+        "BEZIRK": "Neukölln"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.426441,
+          52.420239
+        ]
+      },
+      "id": "node/12535154660"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12535154661",
+        "name": "Buckow 2",
+        "place": "quarter",
+        "OTEIL": "Buckow 2",
+        "BEZIRK": "Neukölln"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.463626,
+          52.4380435
+        ]
+      },
+      "id": "node/12535154661"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13051135004",
+        "name": "Hufeisensiedlung",
+        "place": "quarter",
+        "wikidata": "Q644490",
+        "wikipedia": "de:Hufeisensiedlung",
+        "OTEIL": "Hufeisensiedlung",
+        "BEZIRK": "Neukölln"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4473518,
+          52.4482318
+        ]
+      },
+      "id": "node/13051135004"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13051135006",
+        "alt_name": "Thermosiedlung",
+        "name": "Thermometersiedlung",
+        "place": "quarter",
+        "wikidata": "Q2420052",
+        "wikipedia": "de:Thermometersiedlung",
+        "OTEIL": "Thermometersiedlung",
+        "BEZIRK": "Steglitz-Zehlendorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3151507,
+          52.4134761
+        ]
+      },
+      "id": "node/13051135006"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13051150568",
+        "alt_name": "Rollberge-Siedlung",
+        "name": "Schwarzwaldsiedlung",
+        "place": "quarter",
+        "wikidata": "Q110311527",
+        "wikipedia": "de:Schwarzwaldsiedlung",
+        "OTEIL": "Schwarzwaldsiedlung",
+        "BEZIRK": "Reinickendorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3334566,
+          52.6084729
+        ]
+      },
+      "id": "node/13051150568"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13052325621",
+        "alt_name": "Tirschenreuther Ring",
+        "loc_name": "Großsiedlung Marienfelde",
+        "name": "Großwohnsiedlung Waldsassener Straße",
+        "place": "quarter",
+        "wikidata": "Q21042117",
+        "wikipedia": "de:Großwohnsiedlung Waldsassener Straße",
+        "OTEIL": "Großwohnsiedlung Waldsassener Straße",
+        "BEZIRK": "Tempelhof-Schöneberg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3524828,
+          52.410952
+        ]
+      },
+      "id": "node/13052325621"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13057785340",
+        "name": "John-Locke-Siedlung",
+        "place": "quarter",
+        "website": "https://www.lichtenrade-berlin.de/historisch-john-locke-siedlung",
+        "OTEIL": "John-Locke-Siedlung",
+        "BEZIRK": "Tempelhof-Schöneberg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4006301,
+          52.3928648
+        ]
+      },
+      "id": "node/13057785340"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13057792132",
+        "alt_name": "Hochhaussiedlung Nahariyastrasse",
+        "name": "Volksparksiedlung Lichtenrade",
+        "place": "quarter",
+        "source": "https://www.quartiersmanagement-berlin.de/quartiere/nahariyastrasse.html",
+        "OTEIL": "Volksparksiedlung Lichtenrade",
+        "BEZIRK": "Tempelhof-Schöneberg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4201692,
+          52.3921062
+        ]
+      },
+      "id": "node/13057792132"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13058175797",
+        "name": "Großsiedlung Kamenzer Damm",
+        "place": "quarter",
+        "source": "https://kamenzer-damm.de/",
+        "OTEIL": "Großsiedlung Kamenzer Damm",
+        "BEZIRK": "Steglitz-Zehlendorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3589278,
+          52.4319355
+        ]
+      },
+      "id": "node/13058175797"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13061046878",
+        "name": "Neues Gartenfeld",
+        "place": "quarter",
+        "OTEIL": "Neues Gartenfeld",
+        "BEZIRK": "Spandau"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2426784,
+          52.5514038
+        ]
+      },
+      "id": "node/13061046878"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13061046892",
+        "name": "Paul-Hertz-Siedlung",
+        "place": "quarter",
+        "OTEIL": "Paul-Hertz-Siedlung",
+        "BEZIRK": "Charlottenburg-Wilmersdorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2989068,
+          52.5375033
+        ]
+      },
+      "id": "node/13061046892"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13061067360",
+        "name": "Oberspree",
+        "place": "quarter",
+        "wikidata": "Q99478163",
+        "OTEIL": "Oberspree",
+        "BEZIRK": "Treptow-Köpenick"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5354247,
+          52.4511384
+        ]
+      },
+      "id": "node/13061067360"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13061097025",
+        "alt_name": "Wohnkomplex Amtsfeld",
+        "name": "Salvador-Allende-Viertel I",
+        "place": "quarter",
+        "short_name": "Allende-Viertel I",
+        "OTEIL": "Salvador-Allende-Viertel I",
+        "BEZIRK": "Treptow-Köpenick"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5906056,
+          52.4437867
+        ]
+      },
+      "id": "node/13061097025"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13061106737",
+        "name": "Köllnische Vorstadt",
+        "place": "quarter",
+        "wikidata": "Q1783214",
+        "wikipedia": "de:Köllnische Vorstadt",
+        "OTEIL": "Köllnische Vorstadt",
+        "BEZIRK": "Treptow-Köpenick"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5671174,
+          52.4437948
+        ]
+      },
+      "id": "node/13061106737"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13061120217",
+        "alt_name": "Louise-Schroeder-Siedlung",
+        "name": "Louise-Schröder-Siedlung",
+        "place": "quarter",
+        "OTEIL": "Louise-Schröder-Siedlung",
+        "BEZIRK": "Spandau"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.1525018,
+          52.5320048
+        ]
+      },
+      "id": "node/13061120217"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13061128921",
+        "name": "Schillerhöhe",
+        "place": "quarter",
+        "OTEIL": "Schillerhöhe",
+        "BEZIRK": "Mitte"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3591367,
+          52.5587348
+        ]
+      },
+      "id": "node/13061128921"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13061139772",
+        "name": "High-Deck-Siedlung",
+        "place": "quarter",
+        "wikidata": "Q1617678",
+        "wikipedia": "de:High-Deck-Siedlung",
+        "OTEIL": "High-Deck-Siedlung",
+        "BEZIRK": "Neukölln"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4744466,
+          52.4640817
+        ]
+      },
+      "id": "node/13061139772"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13087272822",
+        "name": "Wendenschloß",
+        "place": "quarter",
+        "wikidata": "Q1362915",
+        "wikipedia": "de:Wendenschloß",
+        "OTEIL": "Wendenschloß",
+        "BEZIRK": "Treptow-Köpenick"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5906225,
+          52.4202852
+        ]
+      },
+      "id": "node/13087272822"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13087304309",
+        "name": "Kölner Viertel",
+        "place": "quarter",
+        "OTEIL": "Kölner Viertel",
+        "BEZIRK": "Treptow-Köpenick"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5419154,
+          52.4032355
+        ]
+      },
+      "id": "node/13087304309"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13087625569",
+        "name": "Waldsiedlung Krumme Lanke",
+        "place": "quarter",
+        "wikidata": "Q125972459",
+        "wikipedia": "de:Waldsiedlung Krumme Lanke",
+        "OTEIL": "Waldsiedlung Krumme Lanke",
+        "BEZIRK": "Steglitz-Zehlendorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2402301,
+          52.4489445
+        ]
+      },
+      "id": "node/13087625569"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13087887035",
+        "alt_name": "Siedlung Freie Scholle",
+        "name": "Freie Scholle",
+        "place": "quarter",
+        "OTEIL": "Freie Scholle",
+        "BEZIRK": "Reinickendorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3011804,
+          52.6017164
+        ]
+      },
+      "id": "node/13087887035"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13087910759",
+        "name": "Tiefwerder",
+        "place": "quarter",
+        "OTEIL": "Tiefwerder",
+        "BEZIRK": "Spandau"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2098148,
+          52.51971
+        ]
+      },
+      "id": "node/13087910759"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13087913821",
+        "name": "Friedrich-Wilhelm-Stadt",
+        "place": "quarter",
+        "wikidata": "Q1457874",
+        "wikipedia": "de:Friedrich-Wilhelm-Stadt",
+        "OTEIL": "Friedrich-Wilhelm-Stadt",
+        "BEZIRK": "Mitte"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3794347,
+          52.5227061
+        ]
+      },
+      "id": "node/13087913821"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13087976528",
+        "name": "Kissingenviertel",
+        "place": "quarter",
+        "website": "https://denkmaldatenbank.berlin.de/daobj.php?obj_dok_nr=09050562",
+        "OTEIL": "Kissingenviertel",
+        "BEZIRK": "Pankow"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4227326,
+          52.5672151
+        ]
+      },
+      "id": "node/13087976528"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13087994183",
+        "name": "Onkel Toms Hütte",
+        "place": "quarter",
+        "OTEIL": "Onkel Toms Hütte",
+        "BEZIRK": "Steglitz-Zehlendorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2568322,
+          52.4503306
+        ]
+      },
+      "id": "node/13087994183"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13088030271",
+        "name": "Rheinisches Viertel",
+        "place": "quarter",
+        "OTEIL": "Rheinisches Viertel",
+        "BEZIRK": "Lichtenberg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5307452,
+          52.4833531
+        ]
+      },
+      "id": "node/13088030271"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13089257686",
+        "name": "Rosenthaler Vorstadt",
+        "place": "quarter",
+        "website": "https://www.berlin.de/special/stadtteile/mitte/919906-5170833-rosenthaler-vorstadt.html",
+        "OTEIL": "Rosenthaler Vorstadt",
+        "BEZIRK": "Mitte"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4024541,
+          52.5312541
+        ]
+      },
+      "id": "node/13089257686"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13089268207",
+        "name": "Florakiez",
+        "place": "quarter",
+        "website": "https://www.berlin.de/special/stadtteile/kieze/7552287-7429665-florakiez.html",
+        "OTEIL": "Florakiez",
+        "BEZIRK": "Pankow"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4009953,
+          52.565786
+        ]
+      },
+      "id": "node/13089268207"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13089332817",
+        "name": "Oranienburger Vorstadt",
+        "place": "quarter",
+        "OTEIL": "Oranienburger Vorstadt",
+        "BEZIRK": "Mitte"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3884823,
+          52.5320896
+        ]
+      },
+      "id": "node/13089332817"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13089349308",
+        "name": "Boxhagener Kiez",
+        "place": "quarter",
+        "website": "https://www.berlin.de/special/stadtteile/friedrichshain/898946-5170813-boxhagener-kiez.html",
+        "OTEIL": "Boxhagener Kiez",
+        "BEZIRK": "Friedrichshain-Kreuzberg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4604008,
+          52.5105879
+        ]
+      },
+      "id": "node/13089349308"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13089364833",
+        "name": "Kaulsdorf-Nord",
+        "place": "quarter",
+        "wikidata": "Q61676985",
+        "wikipedia": "de:Wohngebiet Kaulsdorf-Nord",
+        "OTEIL": "Kaulsdorf-Nord",
+        "BEZIRK": "Marzahn-Hellersdorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5834005,
+          52.5219118
+        ]
+      },
+      "id": "node/13089364833"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13089398487",
+        "alt_name": "Ostseeviertel",
+        "name": "Zingster Straße",
+        "place": "quarter",
+        "OTEIL": "Zingster Straße",
+        "BEZIRK": "Lichtenberg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4990861,
+          52.5687864
+        ]
+      },
+      "id": "node/13089398487"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13089398488",
+        "name": "Mühlengrund",
+        "place": "quarter",
+        "OTEIL": "Mühlengrund",
+        "BEZIRK": "Lichtenberg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5116541,
+          52.5617715
+        ]
+      },
+      "id": "node/13089398488"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13089398489",
+        "name": "Vincent-van-Gogh-Straße",
+        "place": "quarter",
+        "OTEIL": "Vincent-van-Gogh-Straße",
+        "BEZIRK": "Lichtenberg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5241583,
+          52.5654772
+        ]
+      },
+      "id": "node/13089398489"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13089398490",
+        "name": "Krummer Pfuhl",
+        "place": "quarter",
+        "OTEIL": "Krummer Pfuhl",
+        "BEZIRK": "Lichtenberg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5121708,
+          52.5720498
+        ]
+      },
+      "id": "node/13089398490"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13089447773",
+        "name": "Märkisches Viertel",
+        "place": "quarter",
+        "wikipedia": "de:Berlin-Alt-Hohenschönhausen#Märkisches Viertel",
+        "OTEIL": "Märkisches Viertel",
+        "BEZIRK": "Lichtenberg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4922888,
+          52.5398785
+        ]
+      },
+      "id": "node/13089447773"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13093245232",
+        "name": "Märchenviertel",
+        "place": "quarter",
+        "OTEIL": "Märchenviertel",
+        "BEZIRK": "Treptow-Köpenick"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5898604,
+          52.4638777
+        ]
+      },
+      "id": "node/13093245232"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13093250593",
+        "name": "Graefekiez",
+        "place": "quarter",
+        "OTEIL": "Graefekiez",
+        "BEZIRK": "Friedrichshain-Kreuzberg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4160489,
+          52.4910072
+        ]
+      },
+      "id": "node/13093250593"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13093276664",
+        "alt_name": "Südliche Friedrichstadt",
+        "name": "Zeitungsviertel",
+        "place": "quarter",
+        "wikidata": "Q187083",
+        "wikipedia": "de:Zeitungsviertel",
+        "OTEIL": "Zeitungsviertel",
+        "BEZIRK": "Friedrichshain-Kreuzberg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3910599,
+          52.5029618
+        ]
+      },
+      "id": "node/13093276664"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13093292192",
+        "name": "Bergmannkiez",
+        "place": "quarter",
+        "OTEIL": "Bergmannkiez",
+        "BEZIRK": "Friedrichshain-Kreuzberg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3922299,
+          52.489989
+        ]
+      },
+      "id": "node/13093292192"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13093298413",
+        "name": "Wrangelkiez",
+        "place": "quarter",
+        "OTEIL": "Wrangelkiez",
+        "BEZIRK": "Friedrichshain-Kreuzberg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4435948,
+          52.4986659
+        ]
+      },
+      "id": "node/13093298413"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13093321501",
+        "alt_name": "Gartenstadt Rudow",
+        "name": "Frauenviertel",
+        "place": "quarter",
+        "OTEIL": "Frauenviertel",
+        "BEZIRK": "Neukölln"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5062478,
+          52.4028383
+        ]
+      },
+      "id": "node/13093321501"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13094643897",
+        "name": "Victoriastadt",
+        "place": "quarter",
+        "OTEIL": "Victoriastadt",
+        "BEZIRK": "Lichtenberg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4766102,
+          52.504859
+        ]
+      },
+      "id": "node/13094643897"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13094676857",
+        "name": "Sewanviertel",
+        "old_name": "Hans-Loch-Viertel",
+        "place": "quarter",
+        "OTEIL": "Sewanviertel",
+        "BEZIRK": "Lichtenberg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5093194,
+          52.4975141
+        ]
+      },
+      "id": "node/13094676857"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13094709217",
+        "name": "Carlsgarten",
+        "place": "quarter",
+        "OTEIL": "Carlsgarten",
+        "BEZIRK": "Lichtenberg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5328923,
+          52.4757784
+        ]
+      },
+      "id": "node/13094709217"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13094713492",
+        "name": "Marzahn-Ost",
+        "place": "quarter",
+        "OTEIL": "Marzahn-Ost",
+        "BEZIRK": "Marzahn-Hellersdorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5788065,
+          52.5512765
+        ]
+      },
+      "id": "node/13094713492"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13094724141",
+        "name": "Marzahn-Mitte",
+        "place": "quarter",
+        "OTEIL": "Marzahn-Mitte",
+        "BEZIRK": "Marzahn-Hellersdorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5541084,
+          52.5541104
+        ]
+      },
+      "id": "node/13094724141"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13094728679",
+        "name": "Springpfuhl",
+        "place": "quarter",
+        "OTEIL": "Springpfuhl",
+        "BEZIRK": "Marzahn-Hellersdorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5433423,
+          52.5305247
+        ]
+      },
+      "id": "node/13094728679"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13094732952",
+        "name": "Marzahn-Süd",
+        "place": "quarter",
+        "OTEIL": "Marzahn-Süd",
+        "BEZIRK": "Marzahn-Hellersdorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.559108,
+          52.5384504
+        ]
+      },
+      "id": "node/13094732952"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13095173299",
+        "name": "Alte Hellersdorfer Straße",
+        "place": "quarter",
+        "OTEIL": "Alte Hellersdorfer Straße",
+        "BEZIRK": "Marzahn-Hellersdorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5914371,
+          52.5433349
+        ]
+      },
+      "id": "node/13095173299"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13095195184",
+        "name": "Gelbes Viertel",
+        "place": "quarter",
+        "OTEIL": "Gelbes Viertel",
+        "BEZIRK": "Marzahn-Hellersdorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5933686,
+          52.5289645
+        ]
+      },
+      "id": "node/13095195184"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13095224256",
+        "name": "Leipziger Tor",
+        "place": "quarter",
+        "OTEIL": "Leipziger Tor",
+        "BEZIRK": "Marzahn-Hellersdorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.6210905,
+          52.5408274
+        ]
+      },
+      "id": "node/13095224256"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13095244050",
+        "name": "Kienberg-Viertel",
+        "place": "quarter",
+        "OTEIL": "Kienberg-Viertel",
+        "BEZIRK": "Marzahn-Hellersdorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5882208,
+          52.5380183
+        ]
+      },
+      "id": "node/13095244050"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13095244051",
+        "alt_name": "Cecilienplatz-Viertel",
+        "name": "Rotes Viertel",
+        "place": "quarter",
+        "OTEIL": "Rotes Viertel",
+        "BEZIRK": "Marzahn-Hellersdorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5907531,
+          52.5213147
+        ]
+      },
+      "id": "node/13095244051"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13095246545",
+        "name": "Branitzer Karree",
+        "place": "quarter",
+        "OTEIL": "Branitzer Karree",
+        "BEZIRK": "Marzahn-Hellersdorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.6211049,
+          52.5351095
+        ]
+      },
+      "id": "node/13095246545"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13095260411",
+        "name": "Rathaus-Viertel",
+        "place": "quarter",
+        "OTEIL": "Rathaus-Viertel",
+        "BEZIRK": "Marzahn-Hellersdorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.610841,
+          52.5328021
+        ]
+      },
+      "id": "node/13095260411"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13095269357",
+        "name": "Kastanienallee",
+        "place": "quarter",
+        "OTEIL": "Kastanienallee",
+        "BEZIRK": "Marzahn-Hellersdorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.6046286,
+          52.5322921
+        ]
+      },
+      "id": "node/13095269357"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13095271643",
+        "alt_name": "Dresdner Viertel",
+        "name": "Hellersdorfer Graben",
+        "place": "quarter",
+        "OTEIL": "Hellersdorfer Graben",
+        "BEZIRK": "Marzahn-Hellersdorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.6107515,
+          52.5351471
+        ]
+      },
+      "id": "node/13095271643"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13095296467",
+        "name": "Neu-Britz",
+        "place": "quarter",
+        "OTEIL": "Neu-Britz",
+        "BEZIRK": "Neukölln"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4388596,
+          52.4637283
+        ]
+      },
+      "id": "node/13095296467"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13095318904",
+        "name": "Körnerkiez",
+        "place": "quarter",
+        "OTEIL": "Körnerkiez",
+        "BEZIRK": "Neukölln"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4361664,
+          52.4705678
+        ]
+      },
+      "id": "node/13095318904"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13099247411",
+        "alt_name": "Rosenthal II",
+        "name": "Nordend",
+        "place": "quarter",
+        "OTEIL": "Nordend",
+        "BEZIRK": "Pankow"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4023177,
+          52.5931587
+        ]
+      },
+      "id": "node/13099247411"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13099257115",
+        "alt_name": "Neu-Karow",
+        "name": "Karow-Nord",
+        "place": "quarter",
+        "OTEIL": "Karow-Nord",
+        "BEZIRK": "Pankow"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4879227,
+          52.6183358
+        ]
+      },
+      "id": "node/13099257115"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13099260207",
+        "name": "Buchholz-West",
+        "place": "quarter",
+        "OTEIL": "Buchholz-West",
+        "BEZIRK": "Pankow"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.421591,
+          52.6066911
+        ]
+      },
+      "id": "node/13099260207"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13102235754",
+        "alt_name": "Pettenkofer Dreieck",
+        "name": "Eldenaer Viertel",
+        "place": "quarter",
+        "OTEIL": "Eldenaer Viertel",
+        "BEZIRK": "Pankow"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4650011,
+          52.520967
+        ]
+      },
+      "id": "node/13102235754"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13102371738",
+        "name": "Cité Foch",
+        "place": "quarter",
+        "OTEIL": "Cité Foch",
+        "BEZIRK": "Reinickendorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3201114,
+          52.6012071
+        ]
+      },
+      "id": "node/13102371738"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13102666218",
+        "name": "Borsigsiedlung",
+        "place": "quarter",
+        "OTEIL": "Borsigsiedlung",
+        "BEZIRK": "Reinickendorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2397108,
+          52.6233838
+        ]
+      },
+      "id": "node/13102666218"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13102715375",
+        "name": "Akazienkiez",
+        "place": "quarter",
+        "OTEIL": "Akazienkiez",
+        "BEZIRK": "Tempelhof-Schöneberg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3500605,
+          52.4873874
+        ]
+      },
+      "id": "node/13102715375"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13102718788",
+        "name": "Bayerisches Viertel",
+        "place": "quarter",
+        "OTEIL": "Bayerisches Viertel",
+        "BEZIRK": "Tempelhof-Schöneberg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.339562,
+          52.4899521
+        ]
+      },
+      "id": "node/13102718788"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13102733839",
+        "alt_name": "Motzstraßenkiez",
+        "loc_name": "Regenbogenkiez",
+        "name": "Nollendorfkiez",
+        "place": "quarter",
+        "OTEIL": "Nollendorfkiez",
+        "BEZIRK": "Tempelhof-Schöneberg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3517244,
+          52.497797
+        ]
+      },
+      "id": "node/13102733839"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13103776103",
+        "name": "Stresow",
+        "place": "quarter",
+        "OTEIL": "Stresow",
+        "BEZIRK": "Spandau"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2057753,
+          52.5308998
+        ]
+      },
+      "id": "node/13103776103"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13103780421",
+        "name": "Klosterfelde",
+        "place": "quarter",
+        "OTEIL": "Klosterfelde",
+        "BEZIRK": "Spandau"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.1885826,
+          52.533855
+        ]
+      },
+      "id": "node/13103780421"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13103780640",
+        "name": "Spandau-West",
+        "place": "quarter",
+        "OTEIL": "Spandau-West",
+        "BEZIRK": "Spandau"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.1870161,
+          52.5381785
+        ]
+      },
+      "id": "node/13103780640"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13103881578",
+        "name": "Bocksfelde",
+        "place": "quarter",
+        "OTEIL": "Bocksfelde",
+        "BEZIRK": "Spandau"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.1870006,
+          52.5131053
+        ]
+      },
+      "id": "node/13103881578"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13103882302",
+        "alt_name": "Altstadt Spandau",
+        "name": "Altstadt",
+        "place": "quarter",
+        "wikidata": "Q445600",
+        "OTEIL": "Altstadt",
+        "BEZIRK": "Spandau"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2044802,
+          52.537245
+        ]
+      },
+      "id": "node/13103882302"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13103886819",
+        "alt_name": "Neustadt Spandau",
+        "loc_name": "Askanierkiez",
+        "name": "Neustadt",
+        "place": "quarter",
+        "OTEIL": "Neustadt",
+        "BEZIRK": "Spandau"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2019773,
+          52.5470985
+        ]
+      },
+      "id": "node/13103886819"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13103896542",
+        "name": "Pichelsdorf",
+        "place": "quarter",
+        "OTEIL": "Pichelsdorf",
+        "BEZIRK": "Spandau"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.1989819,
+          52.5109715
+        ]
+      },
+      "id": "node/13103896542"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13103908745",
+        "name": "Wasserstadt Spandau",
+        "place": "quarter",
+        "OTEIL": "Wasserstadt Spandau",
+        "BEZIRK": "Spandau"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2187203,
+          52.5561238
+        ]
+      },
+      "id": "node/13103908745"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13103918413",
+        "name": "Weinmeisterhöhe",
+        "place": "quarter",
+        "OTEIL": "Weinmeisterhöhe",
+        "BEZIRK": "Spandau"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.1834331,
+          52.5053925
+        ]
+      },
+      "id": "node/13103918413"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13103921795",
+        "name": "Reichsforschungssiedlung Haselhorst",
+        "place": "quarter",
+        "OTEIL": "Reichsforschungssiedlung Haselhorst",
+        "BEZIRK": "Spandau"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2365678,
+          52.5446414
+        ]
+      },
+      "id": "node/13103921795"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13103938279",
+        "name": "Quartier Haveleck",
+        "place": "quarter",
+        "OTEIL": "Quartier Haveleck",
+        "BEZIRK": "Spandau"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2283413,
+          52.5561691
+        ]
+      },
+      "id": "node/13103938279"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13104009960",
+        "name": "Maselake-Zentrum",
+        "place": "quarter",
+        "OTEIL": "Maselake-Zentrum",
+        "BEZIRK": "Spandau"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.209386,
+          52.5581028
+        ]
+      },
+      "id": "node/13104009960"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13104010124",
+        "alt_name": "Siedlung Nonnendamm",
+        "name": "Alt-Siemensstadt",
+        "place": "quarter",
+        "OTEIL": "Alt-Siemensstadt",
+        "BEZIRK": "Spandau"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2689499,
+          52.5366523
+        ]
+      },
+      "id": "node/13104010124"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13104022381",
+        "name": "Großsiedlung Siemensstadt",
+        "place": "quarter",
+        "OTEIL": "Großsiedlung Siemensstadt",
+        "BEZIRK": "Charlottenburg-Wilmersdorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2754252,
+          52.5392189
+        ]
+      },
+      "id": "node/13104022381"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13104023487",
+        "name": "Maselake Nord",
+        "place": "quarter",
+        "OTEIL": "Maselake Nord",
+        "BEZIRK": "Spandau"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2139509,
+          52.5629971
+        ]
+      },
+      "id": "node/13104023487"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13104029155",
+        "name": "Siedlung Siemensstadt",
+        "place": "quarter",
+        "OTEIL": "Siedlung Siemensstadt",
+        "BEZIRK": "Spandau"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2631042,
+          52.5451081
+        ]
+      },
+      "id": "node/13104029155"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13104054127",
+        "name": "Albrechtshof",
+        "place": "quarter",
+        "OTEIL": "Albrechtshof",
+        "BEZIRK": "Spandau"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.1372178,
+          52.5504617
+        ]
+      },
+      "id": "node/13104054127"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13104060593",
+        "name": "Siedlung Hahneberg",
+        "place": "quarter",
+        "OTEIL": "Siedlung Hahneberg",
+        "BEZIRK": "Spandau"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.1312626,
+          52.521287
+        ]
+      },
+      "id": "node/13104060593"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13104065410",
+        "name": "Gartenstadt Staaken",
+        "place": "quarter",
+        "wikidata": "Q1494720",
+        "wikimedia_commons": "Category:Gartenstadt Staaken",
+        "wikipedia": "de:Gartenstadt Staaken",
+        "OTEIL": "Gartenstadt Staaken",
+        "BEZIRK": "Spandau"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.1470075,
+          52.5412924
+        ]
+      },
+      "id": "node/13104065410"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13104073078",
+        "name": "Hohengatow",
+        "place": "quarter",
+        "OTEIL": "Hohengatow",
+        "BEZIRK": "Spandau"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.1777396,
+          52.4728833
+        ]
+      },
+      "id": "node/13104073078"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13104577000",
+        "name": "Weinviertel",
+        "place": "quarter",
+        "OTEIL": "Weinviertel",
+        "BEZIRK": "Steglitz-Zehlendorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3481392,
+          52.4389211
+        ]
+      },
+      "id": "node/13104577000"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13104612576",
+        "name": "Thüringer Viertel",
+        "place": "quarter",
+        "OTEIL": "Thüringer Viertel",
+        "BEZIRK": "Steglitz-Zehlendorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3417661,
+          52.4193364
+        ]
+      },
+      "id": "node/13104612576"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13104621258",
+        "name": "Späthsfelde",
+        "place": "quarter",
+        "OTEIL": "Späthsfelde",
+        "BEZIRK": "Treptow-Köpenick"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4807991,
+          52.4492851
+        ]
+      },
+      "id": "node/13104621258"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13104628397",
+        "name": "Westfälisches Viertel",
+        "place": "quarter",
+        "OTEIL": "Westfälisches Viertel",
+        "BEZIRK": "Mitte"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3379977,
+          52.5235316
+        ]
+      },
+      "id": "node/13104628397"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13104629500",
+        "name": "Beusselkiez",
+        "place": "quarter",
+        "OTEIL": "Beusselkiez",
+        "BEZIRK": "Mitte"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3280819,
+          52.5293987
+        ]
+      },
+      "id": "node/13104629500"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13104630040",
+        "name": "Lichterfelde West",
+        "place": "quarter",
+        "OTEIL": "Lichterfelde West",
+        "BEZIRK": "Steglitz-Zehlendorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3016029,
+          52.4402636
+        ]
+      },
+      "id": "node/13104630040"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13104641229",
+        "name": "Johannisthal-Süd",
+        "place": "quarter",
+        "OTEIL": "Johannisthal-Süd",
+        "BEZIRK": "Treptow-Köpenick"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4975518,
+          52.4384437
+        ]
+      },
+      "id": "node/13104641229"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13104645901",
+        "name": "Lichterfelde Ost",
+        "place": "quarter",
+        "OTEIL": "Lichterfelde Ost",
+        "BEZIRK": "Steglitz-Zehlendorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3254747,
+          52.4266447
+        ]
+      },
+      "id": "node/13104645901"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13104663781",
+        "name": "Stephankiez",
+        "place": "quarter",
+        "OTEIL": "Stephankiez",
+        "BEZIRK": "Mitte"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3465997,
+          52.5329647
+        ]
+      },
+      "id": "node/13104663781"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13104670949",
+        "name": "Adlershof-Süd",
+        "place": "quarter",
+        "OTEIL": "Adlershof-Süd",
+        "BEZIRK": "Treptow-Köpenick"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5534324,
+          52.4358114
+        ]
+      },
+      "id": "node/13104670949"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13104674992",
+        "name": "Adlershof-Nord",
+        "place": "quarter",
+        "OTEIL": "Adlershof-Nord",
+        "BEZIRK": "Treptow-Köpenick"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5492134,
+          52.4413327
+        ]
+      },
+      "id": "node/13104674992"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13104677763",
+        "name": "Huttenkiez",
+        "place": "quarter",
+        "population": "Hutteninsel",
+        "OTEIL": "Huttenkiez",
+        "BEZIRK": "Mitte"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3180735,
+          52.5284606
+        ]
+      },
+      "id": "node/13104677763"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13104696437",
+        "alt_name": "Schliemannsiedlung",
+        "name": "Schliemann-Siedlung",
+        "place": "quarter",
+        "OTEIL": "Schliemann-Siedlung",
+        "BEZIRK": "Treptow-Köpenick"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5053488,
+          52.433078
+        ]
+      },
+      "id": "node/13104696437"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13107950195",
+        "name": "Soldiner Kiez",
+        "place": "quarter",
+        "OTEIL": "Soldiner Kiez",
+        "BEZIRK": "Mitte"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3833141,
+          52.558528
+        ]
+      },
+      "id": "node/13107950195"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13107954169",
+        "name": "Friedrich-Ebert-Siedlung",
+        "place": "quarter",
+        "OTEIL": "Friedrich-Ebert-Siedlung",
+        "BEZIRK": "Mitte"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3322369,
+          52.5585439
+        ]
+      },
+      "id": "node/13107954169"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13107970251",
+        "name": "Munizipalviertel",
+        "place": "quarter",
+        "OTEIL": "Munizipalviertel",
+        "BEZIRK": "Pankow"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.452424,
+          52.5524651
+        ]
+      },
+      "id": "node/13107970251"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13107971211",
+        "name": "Gründerviertel",
+        "place": "quarter",
+        "OTEIL": "Gründerviertel",
+        "BEZIRK": "Pankow"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4443982,
+          52.5509066
+        ]
+      },
+      "id": "node/13107971211"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13111095608",
+        "name": "Gartenstadt",
+        "place": "quarter",
+        "OTEIL": "Gartenstadt",
+        "BEZIRK": "Charlottenburg-Wilmersdorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3156759,
+          52.4696917
+        ]
+      },
+      "id": "node/13111095608"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13111103411",
+        "alt_name": "Rheingau-Viertel",
+        "name": "Rheingauviertel",
+        "place": "quarter",
+        "OTEIL": "Rheingauviertel",
+        "BEZIRK": "Charlottenburg-Wilmersdorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3158271,
+          52.473055
+        ]
+      },
+      "id": "node/13111103411"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13111170073",
+        "name": "Crellekiez",
+        "place": "quarter",
+        "OTEIL": "Crellekiez",
+        "BEZIRK": "Tempelhof-Schöneberg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3610566,
+          52.4900422
+        ]
+      },
+      "id": "node/13111170073"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13111171610",
+        "name": "Stadtrandsiedlung Marienfelde",
+        "place": "quarter",
+        "OTEIL": "Stadtrandsiedlung Marienfelde",
+        "BEZIRK": "Tempelhof-Schöneberg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3546438,
+          52.4043499
+        ]
+      },
+      "id": "node/13111171610"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13111194007",
+        "name": "Andreasviertel",
+        "place": "quarter",
+        "OTEIL": "Andreasviertel",
+        "BEZIRK": "Friedrichshain-Kreuzberg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4325539,
+          52.5151063
+        ]
+      },
+      "id": "node/13111194007"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13111200812",
+        "name": "Richard-Sorge-Viertel",
+        "place": "quarter",
+        "OTEIL": "Richard-Sorge-Viertel",
+        "BEZIRK": "Friedrichshain-Kreuzberg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4475445,
+          52.521266
+        ]
+      },
+      "id": "node/13111200812"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13111205394",
+        "name": "Charitéviertel",
+        "place": "quarter",
+        "OTEIL": "Charitéviertel",
+        "BEZIRK": "Mitte"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3785049,
+          52.5280599
+        ]
+      },
+      "id": "node/13111205394"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13111229253",
+        "alt_name": "Gneisenaukiez",
+        "name": "Tempelhofer Vorstadt",
+        "place": "quarter",
+        "OTEIL": "Tempelhofer Vorstadt",
+        "BEZIRK": "Friedrichshain-Kreuzberg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3906572,
+          52.4951294
+        ]
+      },
+      "id": "node/13111229253"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13111275664",
+        "alt_name": "Media Spree",
+        "name": "Mediaspree",
+        "place": "quarter",
+        "wikidata": "Q1916215",
+        "wikipedia": "de:Mediaspree",
+        "OTEIL": "Mediaspree",
+        "BEZIRK": "Friedrichshain-Kreuzberg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4449801,
+          52.5040801
+        ]
+      },
+      "id": "node/13111275664"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13112434480",
+        "name": "Blumenviertel",
+        "place": "quarter",
+        "OTEIL": "Blumenviertel",
+        "BEZIRK": "Neukölln"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4974848,
+          52.4256407
+        ]
+      },
+      "id": "node/13112434480"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13137201780",
+        "name": "Ruhleben",
+        "place": "quarter",
+        "OTEIL": "Ruhleben",
+        "BEZIRK": "Charlottenburg-Wilmersdorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2375697,
+          52.5236798
+        ]
+      },
+      "id": "node/13137201780"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13140901190",
+        "name": "Arkonakiez",
+        "place": "quarter",
+        "OTEIL": "Arkonakiez",
+        "BEZIRK": "Mitte"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4017754,
+          52.5374964
+        ]
+      },
+      "id": "node/13140901190"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13163960755",
+        "name": "WISTA",
+        "official_name": "Wissenschafts- und Wirtschaftsstandort Adlershof",
+        "place": "quarter",
+        "OTEIL": "WISTA",
+        "BEZIRK": "Treptow-Köpenick"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5317126,
+          52.4322605
+        ]
+      },
+      "id": "node/13163960755"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13164002631",
+        "name": "Biesenhorst I",
+        "place": "quarter",
+        "OTEIL": "Biesenhorst I",
+        "BEZIRK": "Marzahn-Hellersdorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.555355,
+          52.486202
+        ]
+      },
+      "id": "node/13164002631"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13164116194",
+        "name": "Grüne Aue",
+        "place": "quarter",
+        "OTEIL": "Grüne Aue",
+        "BEZIRK": "Marzahn-Hellersdorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5741008,
+          52.5035472
+        ]
+      },
+      "id": "node/13164116194"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13164116195",
+        "name": "Habichtshorst",
+        "place": "quarter",
+        "OTEIL": "Habichtshorst",
+        "BEZIRK": "Marzahn-Hellersdorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5648059,
+          52.5014363
+        ]
+      },
+      "id": "node/13164116195"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13164169060",
+        "name": "Anlage Blankenburg",
+        "place": "quarter",
+        "OTEIL": "Anlage Blankenburg",
+        "BEZIRK": "Pankow"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4446957,
+          52.5866646
+        ]
+      },
+      "id": "node/13164169060"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13164738699",
+        "name": "Witzleben",
+        "place": "quarter",
+        "wikidata": "Q821158",
+        "wikipedia": "de:Berlin-Witzleben",
+        "OTEIL": "Witzleben",
+        "BEZIRK": "Charlottenburg-Wilmersdorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2901739,
+          52.5071477
+        ]
+      },
+      "id": "node/13164738699"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13164765645",
+        "alt_name": "Mierendorffkiez",
+        "loc_name": "Mierendorff-Insel",
+        "old_name": "Kalowswerder",
+        "place": "quarter",
+        "BEZIRK": "Charlottenburg-Wilmersdorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3055214,
+          52.5254228
+        ]
+      },
+      "id": "node/13164765645"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13164767592",
+        "name": "Güntzelkiez",
+        "place": "quarter",
+        "OTEIL": "Güntzelkiez",
+        "BEZIRK": "Charlottenburg-Wilmersdorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3247822,
+          52.4899719
+        ]
+      },
+      "id": "node/13164767592"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13164777866",
+        "alt_name": "Klausenerplatz",
+        "loc_name": "Kleiner Wedding",
+        "name": "Danckelmannkiez",
+        "place": "quarter",
+        "OTEIL": "Danckelmannkiez",
+        "BEZIRK": "Charlottenburg-Wilmersdorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2919367,
+          52.5172088
+        ]
+      },
+      "id": "node/13164777866"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13164799547",
+        "name": "Alt-Lietzow",
+        "place": "quarter",
+        "OTEIL": "Alt-Lietzow",
+        "BEZIRK": "Charlottenburg-Wilmersdorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3121275,
+          52.5180943
+        ]
+      },
+      "id": "node/13164799547"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13164825620",
+        "alt_name": "Ludwigkirchplatz",
+        "name": "Fasanenkiez",
+        "place": "quarter",
+        "OTEIL": "Fasanenkiez",
+        "BEZIRK": "Charlottenburg-Wilmersdorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3212689,
+          52.4976812
+        ]
+      },
+      "id": "node/13164825620"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13166559593",
+        "name": "Neuland",
+        "place": "quarter",
+        "OTEIL": "Neuland",
+        "BEZIRK": "Neukölln"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.441141,
+          52.4307728
+        ]
+      },
+      "id": "node/13166559593"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13166602310",
+        "name": "Siegener Viertel",
+        "place": "quarter",
+        "OTEIL": "Siegener Viertel",
+        "BEZIRK": "Spandau"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.1806621,
+          52.5454444
+        ]
+      },
+      "id": "node/13166602310"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13168450397",
+        "name": "Siedlung Charlottenburg-Nord",
+        "place": "quarter",
+        "OTEIL": "Siedlung Charlottenburg-Nord",
+        "BEZIRK": "Charlottenburg-Wilmersdorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2859817,
+          52.5375439
+        ]
+      },
+      "id": "node/13168450397"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13168472416",
+        "alt_name": "Quartier am Salzufer",
+        "name": "Spreestadt Charlottenburg",
+        "place": "quarter",
+        "wikidata": "Q55519716",
+        "wikipedia": "de:Spreestadt Charlottenburg",
+        "OTEIL": "Spreestadt Charlottenburg",
+        "BEZIRK": "Charlottenburg-Wilmersdorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3261075,
+          52.5184751
+        ]
+      },
+      "id": "node/13168472416"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13168509320",
+        "name": "Malerviertel",
+        "place": "quarter",
+        "OTEIL": "Malerviertel",
+        "BEZIRK": "Tempelhof-Schöneberg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3429331,
+          52.468673
+        ]
+      },
+      "id": "node/13168509320"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13172163584",
+        "name": "Brunnenviertel",
+        "place": "quarter",
+        "OTEIL": "Brunnenviertel",
+        "BEZIRK": "Mitte"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3905121,
+          52.5425095
+        ]
+      },
+      "id": "node/13172163584"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13174368881",
+        "name": "Gartensiedlung Grünau",
+        "place": "quarter",
+        "OTEIL": "Gartensiedlung Grünau",
+        "BEZIRK": "Treptow-Köpenick"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5649609,
+          52.4256737
+        ]
+      },
+      "id": "node/13174368881"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13174399158",
+        "name": "Waldsiedlung Hakenfelde",
+        "place": "quarter",
+        "OTEIL": "Waldsiedlung Hakenfelde",
+        "BEZIRK": "Spandau"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2072879,
+          52.5701119
+        ]
+      },
+      "id": "node/13174399158"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13237955172",
+        "name": "Metropolitan Park",
+        "place": "quarter",
+        "OTEIL": "Metropolitan Park",
+        "BEZIRK": "Spandau"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.1343882,
+          52.5334096
+        ]
+      },
+      "id": "node/13237955172"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13315455973",
+        "name": "Ostpreußenviertel",
+        "place": "quarter",
+        "OTEIL": "Ostpreußenviertel",
+        "BEZIRK": "Charlottenburg-Wilmersdorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2424323,
+          52.5079773
+        ]
+      },
+      "id": "node/13315455973"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13315504749",
+        "name": "Villenkolonie Westend",
+        "place": "quarter",
+        "OTEIL": "Villenkolonie Westend",
+        "BEZIRK": "Charlottenburg-Wilmersdorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2698969,
+          52.5166712
+        ]
+      },
+      "id": "node/13315504749"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13315511765",
+        "alt_name": "Tegel Süd",
+        "name": "Tegel-Süd",
+        "place": "quarter",
+        "OTEIL": "Tegel-Süd",
+        "BEZIRK": "Reinickendorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2785546,
+          52.574544
+        ]
+      },
+      "id": "node/13315511765"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13315522990",
+        "alt_name": "Neuer Westend",
+        "name": "Neu-Westend",
+        "place": "quarter",
+        "OTEIL": "Neu-Westend",
+        "BEZIRK": "Charlottenburg-Wilmersdorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2583121,
+          52.5188816
+        ]
+      },
+      "id": "node/13315522990"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13516761451",
+        "name": "Parkviertel",
+        "place": "quarter",
+        "OTEIL": "Parkviertel",
+        "BEZIRK": "Spandau"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.1561047,
+          52.4648438
+        ]
+      },
+      "id": "node/13516761451"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13539094457",
+        "name": "Reichenberger kiez",
+        "place": "quarter",
+        "OTEIL": "Reichenberger kiez",
+        "BEZIRK": "Friedrichshain-Kreuzberg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4298976,
+          52.4958271
+        ]
+      },
+      "id": "node/13539094457"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13539128005",
+        "name": "Travekiez",
+        "place": "quarter",
+        "OTEIL": "Travekiez",
+        "BEZIRK": "Friedrichshain-Kreuzberg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4708722,
+          52.5113733
+        ]
+      },
+      "id": "node/13539128005"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13539138428",
+        "name": "Weserkiez",
+        "place": "quarter",
+        "OTEIL": "Weserkiez",
+        "BEZIRK": "Neukölln"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4431701,
+          52.4833467
+        ]
+      },
+      "id": "node/13539138428"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13539161774",
+        "name": "Vinetakiez",
+        "place": "quarter",
+        "OTEIL": "Vinetakiez",
+        "BEZIRK": "Pankow"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.42164,
+          52.5590918
+        ]
+      },
+      "id": "node/13539161774"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13539165836",
+        "name": "Antonkiez",
+        "place": "quarter",
+        "OTEIL": "Antonkiez",
+        "BEZIRK": "Mitte"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.365501,
+          52.5467652
+        ]
+      },
+      "id": "node/13539165836"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13539171598",
+        "name": "Humann-Kiez",
+        "place": "quarter",
+        "OTEIL": "Humann-Kiez",
+        "BEZIRK": "Pankow"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.422128,
+          52.5499236
+        ]
+      },
+      "id": "node/13539171598"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13539176080",
+        "name": "Hausotter-Kiez",
+        "place": "quarter",
+        "OTEIL": "Hausotter-Kiez",
+        "BEZIRK": "Reinickendorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3720188,
+          52.5681622
+        ]
+      },
+      "id": "node/13539176080"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13539181372",
+        "name": "Arminiuskiez",
+        "place": "quarter",
+        "OTEIL": "Arminiuskiez",
+        "BEZIRK": "Mitte"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3354628,
+          52.5288427
+        ]
+      },
+      "id": "node/13539181372"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13539184370",
+        "name": "Lettekiez",
+        "place": "quarter",
+        "OTEIL": "Lettekiez",
+        "BEZIRK": "Reinickendorf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.371086,
+          52.5607339
+        ]
+      },
+      "id": "node/13539184370"
+    }
+  ]
+}

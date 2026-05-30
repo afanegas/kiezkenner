@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>berlinmemo-st</title>
+    <meta name="description" content="Custom GeoJSON Map Editor for BerlinMemo." />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.css" rel="stylesheet" />
+    <script src="https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.js"></script>
+    <script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script>
+    
+    <style>
+    /* Add some specific styles for the editor */
+    #editor-sidebar {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      width: 340px;
+      max-height: calc(100vh - 32px);
+      overflow-y: auto;
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .editor-section {
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 8px;
+      padding: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .editor-section h3 {
+      font-size: 0.9rem;
+      margin-top: 0;
+      margin-bottom: 12px;
+      color: var(--text-secondary);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .search-results {
+      max-height: 200px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      margin-top: 8px;
+    }
+
+    .search-result-item {
+      padding: 8px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 0.85rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background 0.2s;
+    }
+    .search-result-item:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .mode-btn.active {
+      background: var(--accent-color);
+      color: white;
+    }
+
+    .feature-list {
+      max-height: 150px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      font-size: 0.8rem;
+    }
+
+    .feature-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 4px 8px;
+      background: rgba(0,0,0,0.3);
+      border-radius: 4px;
+    }
+    
+    .remove-btn {
+      background: rgba(220, 38, 38, 0.8);
+      border: none;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+      padding: 2px 6px;
+      font-size: 0.7rem;
+    }
+    /* Editor Tooltip */
+    #editor-tooltip {
+      position: fixed;
+      pointer-events: none;
+      z-index: 100;
+      background: var(--glass-bg);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--glass-border);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+      border-radius: 8px;
+      padding: 6px 12px;
+      color: var(--text-primary);
+      font-size: 0.85rem;
+      font-weight: 600;
+      font-family: var(--primary-font);
+      opacity: 0;
+      transform: translateY(4px);
+      transition: opacity 0.15s ease, transform 0.15s ease;
+      max-width: 280px;
+      white-space: nowrap;
+    }
+    #editor-tooltip.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    #editor-tooltip .tooltip-location {
+      font-size: 0.75rem;
+      font-weight: 400;
+      color: var(--text-secondary);
+      margin-top: 2px;
+    }
+    #editor-tooltip .tooltip-hint {
+      font-size: 0.7rem;
+      font-weight: 400;
+      color: var(--accent-color);
+      margin-top: 3px;
+      opacity: 0.8;
+    }
+
+    /* Editor Toast */
+    #editor-toast {
+      position: fixed;
+      bottom: 32px;
+      left: 50%;
+      transform: translateX(-50%) translateY(20px);
+      z-index: 200;
+      background: rgba(16, 185, 129, 0.9);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      box-shadow: 0 4px 24px rgba(16, 185, 129, 0.3);
+      border-radius: 10px;
+      padding: 10px 20px;
+      color: white;
+      font-size: 0.9rem;
+      font-weight: 600;
+      font-family: var(--primary-font);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    #editor-toast.visible {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+    #editor-toast.toast-error {
+      background: rgba(239, 68, 68, 0.9);
+      border-color: rgba(239, 68, 68, 0.3);
+      box-shadow: 0 4px 24px rgba(239, 68, 68, 0.3);
+    }
+
+    /* Loading Overlay */
+    #loading-overlay {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      z-index: 500;
+      background: rgba(11, 12, 16, 0.7);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      transition: opacity 0.4s ease;
+    }
+    #loading-overlay.hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+    .loading-spinner {
+      width: 40px;
+      height: 40px;
+      border: 3px solid rgba(255, 255, 255, 0.1);
+      border-top-color: var(--accent-color);
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    .loading-text {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    /* Floating Navigation Search Container */
+    #map-nav-search-container {
+      position: absolute;
+      top: 16px;
+      left: 372px; /* 340px sidebar + 16px padding + 16px gap */
+      width: 360px;
+      z-index: 200;
+      display: flex;
+      flex-direction: column;
+      font-family: var(--primary-font);
+    }
+    #map-nav-search-input {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 12px 16px;
+      background: var(--glass-bg);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--glass-border);
+      color: var(--text-primary);
+      border-radius: 10px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    #map-nav-search-input:focus {
+      outline: none;
+      border-color: var(--accent-color);
+      box-shadow: 0 4px 24px rgba(99, 102, 241, 0.4);
+    }
+    #map-nav-search-results {
+      background: var(--glass-bg);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 1px solid var(--glass-border);
+      border-radius: 10px;
+      max-height: 300px;
+      overflow-y: auto;
+      margin-top: 8px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      padding: 6px;
+    }
+    #map-nav-search-results.hidden {
+      display: none;
+    }
+    .nav-result-item {
+      padding: 10px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.85rem;
+      color: var(--text-primary);
+      font-weight: 500;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      transition: background 0.2s;
+    }
+    .nav-result-item:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+    .nav-result-item .nav-result-name {
+      font-weight: 600;
+    }
+    .nav-result-item .nav-result-location {
+      font-size: 0.75rem;
+      color: var(--text-secondary);
+    }
+    </style>
+    
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <main id="app">
+      <div id="editor-sidebar" class="glass-panel">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+          <h1 style="font-size: 1.2rem; margin: 0; background: linear-gradient(135deg, #FFFFFF 0%, #A5B4FC 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">GeoJSON Editor</h1>
+          <a href="index.html" style="color: var(--text-secondary); text-decoration: none; font-size: 0.85rem;">Zurück</a>
+        </div>
+        
+        <div class="editor-section">
+          <h3>Datei-Verwaltung</h3>
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <button id="btn-new-map" class="action-btn" style="background: rgba(239, 68, 68, 0.8);">Neue Karte erstellen</button>
+            <input type="file" id="upload-geojson" accept=".geojson,application/geo+json" style="display: none;" />
+            <label for="upload-geojson" class="action-btn" style="text-align: center; display: block; cursor: pointer;">Basis GeoJSON laden</label>
+            <button id="btn-download" class="action-btn" style="background: #10b981;">Fertige Karte herunterladen</button>
+          </div>
+        </div>
+
+        <div class="editor-section">
+          <h3>Werkzeuge</h3>
+          <div style="display: flex; gap: 4px; margin-bottom: 12px;">
+            <button id="mode-street" class="mode-btn active" style="flex: 1; font-size: 0.8rem; padding: 6px;">Straße</button>
+            <button id="mode-point" class="mode-btn" style="flex: 1; font-size: 0.8rem; padding: 6px;">Punkt</button>
+            <button id="mode-note" class="mode-btn" style="flex: 1; font-size: 0.8rem; padding: 6px;">Bearbeiten</button>
+          </div>
+
+          <!-- Street Tool -->
+          <div id="tool-street">
+            <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0;">Suche eine Straße oder klicke sie direkt auf der Karte an.</p>
+            <input type="text" id="search-street-input" placeholder="Straßenname..." style="width: 100%; box-sizing: border-box; padding: 8px; background: rgba(0,0,0,0.3); border: 1px solid var(--glass-border); color: white; border-radius: 4px; font-size: 0.85rem;" />
+            <div id="search-results" class="search-results"></div>
+          </div>
+
+          <!-- Point Tool -->
+          <div id="tool-point" class="hidden">
+            <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0;">Klicke auf die Karte, um einen Punkt zu setzen. Danach wirst du nach einem Namen gefragt.</p>
+          </div>
+
+          <!-- Note Tool -->
+          <div id="tool-note" class="hidden">
+            <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0;">Klicke auf ein Element, um den Namen oder die Notiz zu ändern.</p>
+            <div id="note-editor" class="hidden" style="display: flex; flex-direction: column; gap: 8px;">
+              <input type="text" id="note-target-name" placeholder="Name des Elements..." style="width: 100%; box-sizing: border-box; padding: 8px; background: rgba(0,0,0,0.3); border: 1px solid var(--glass-border); color: white; border-radius: 4px; font-size: 0.85rem;" />
+              <textarea id="note-input" placeholder="Notiz hier eingeben (optional)..." rows="3" style="width: 100%; box-sizing: border-box; padding: 8px; background: rgba(0,0,0,0.3); border: 1px solid var(--glass-border); color: white; border-radius: 4px; font-size: 0.85rem; font-family: inherit;"></textarea>
+              <div style="display: flex; gap: 8px;">
+                <button id="btn-save-note" class="action-btn" style="flex: 1; padding: 6px; font-size: 0.8rem;">Speichern</button>
+                <button id="btn-delete-note" class="action-btn" style="flex: 1; padding: 6px; font-size: 0.8rem; background: #ef4444;">Löschen</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="editor-section">
+          <h3>Gespeicherte Elemente (<span id="feature-count">0</span>)</h3>
+          <div id="feature-list" class="feature-list">
+            <!-- Populated via JS -->
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Floating Navigation Search Bar -->
+      <div id="map-nav-search-container">
+        <input type="text" id="map-nav-search-input" placeholder="Ort auf Karte suchen (z. B. Schönhauser Allee)..." autocomplete="off" />
+        <div id="map-nav-search-results" class="hidden"></div>
+      </div>
+
+      <!-- Map Container -->
+      <div id="map"></div>
+
+      <!-- Custom Point Name Modal -->
+      <div id="point-name-modal" class="modal-overlay hidden" style="z-index: 1000;">
+        <div class="modal-content glass-panel" style="max-width: 400px; padding: 20px;">
+          <h2 style="font-size: 1.2rem; margin-top: 0; margin-bottom: 12px;">Neuer Punkt</h2>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 16px;">
+            Bitte gib einen Namen und (optional) Notizen für die neue Landmarke ein:
+          </p>
+          <input type="text" id="modal-point-name-input" placeholder="Name..." style="width: 100%; box-sizing: border-box; padding: 10px; background: rgba(0,0,0,0.3); border: 1px solid var(--glass-border); color: white; border-radius: 4px; font-size: 0.9rem; margin-bottom: 8px;" />
+          <textarea id="modal-point-note-input" placeholder="Notiz hier eingeben (optional)..." rows="3" style="width: 100%; box-sizing: border-box; padding: 10px; background: rgba(0,0,0,0.3); border: 1px solid var(--glass-border); color: white; border-radius: 4px; font-size: 0.9rem; margin-bottom: 20px; font-family: inherit;"></textarea>
+          
+          <div style="display: flex; gap: 8px;">
+            <button id="btn-modal-point-cancel" class="action-btn" style="flex: 1; background: rgba(255,255,255,0.1);">Abbrechen</button>
+            <button id="btn-modal-point-save" class="action-btn" style="flex: 1; background: #10b981;">Speichern</button>
+          </div>
+        </div>
+      </div>
+      <!-- Custom Confirmation Modal -->
+      <div id="confirm-modal" class="modal-overlay hidden" style="z-index: 1100;">
+        <div class="modal-content glass-panel" style="max-width: 400px; padding: 20px;">
+          <h2 style="font-size: 1.2rem; margin-top: 0; margin-bottom: 12px;">Neue Karte</h2>
+          <p id="confirm-modal-message" style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 24px;">
+            Möchtest du wirklich eine neue Karte beginnen? Alle ungespeicherten Änderungen gehen verloren.
+          </p>
+          
+          <div style="display: flex; gap: 8px;">
+            <button id="btn-confirm-cancel" class="action-btn" style="flex: 1; background: rgba(255,255,255,0.1);">Abbrechen</button>
+            <button id="btn-confirm-ok" class="action-btn" style="flex: 1; background: #ef4444;">Ja, neue Karte</button>
+          </div>
+        </div>
+      </div>
+      <!-- Hover Tooltip -->
+      <div id="editor-tooltip"></div>
+
+      <!-- Toast Notification -->
+      <div id="editor-toast"></div>
+
+      <!-- Loading Overlay -->
+      <div id="loading-overlay">
+        <div class="loading-spinner"></div>
+        <div class="loading-text">Straßen werden geladen…</div>
+      </div>
+    </main>
+
+    <script type="module" src="./editor.js"></script>
+  </body>
+</html>
