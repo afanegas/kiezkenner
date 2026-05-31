@@ -73,10 +73,7 @@ body, html {
   font-weight: 800;
   letter-spacing: -0.02em;
   line-height: 1.2;
-  background: linear-gradient(135deg, #FFFFFF 0%, #A5B4FC 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #A5B4FC;
 }
 
 #ortsteil-name {

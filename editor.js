@@ -48,6 +48,34 @@ const editorTooltip = document.getElementById('editor-tooltip');
 const editorToast = document.getElementById('editor-toast');
 const loadingOverlay = document.getElementById('loading-overlay');
 
+// Sidebar toggle helpers
+const btnMinimizeSidebar = document.getElementById('btn-minimize-sidebar');
+const btnRestoreSidebar = document.getElementById('btn-restore-sidebar');
+
+function collapseSidebar() {
+  document.getElementById('editor-sidebar').classList.add('collapsed');
+  btnRestoreSidebar.classList.remove('hidden');
+}
+
+function expandSidebar() {
+  document.getElementById('editor-sidebar').classList.remove('collapsed');
+  btnRestoreSidebar.classList.add('hidden');
+}
+
+if (btnMinimizeSidebar) {
+  btnMinimizeSidebar.onclick = (e) => {
+    e.stopPropagation();
+    collapseSidebar();
+  };
+}
+
+if (btnRestoreSidebar) {
+  btnRestoreSidebar.onclick = (e) => {
+    e.stopPropagation();
+    expandSidebar();
+  };
+}
+
 // Toast helper
 function showToast(message, isError = false) {
   if (toastTimeout) clearTimeout(toastTimeout);
@@ -507,6 +535,7 @@ function removeFeature(id) {
 function selectFeatureForNote(id) {
   const feature = customFeatureCollection.features.find(f => (f.id === id) || (f.properties.id === id));
   if (!feature) return;
+  expandSidebar();
   switchMode('note');
   selectedFeatureForNote = feature;
   noteTargetName.value = feature.properties.name || '';

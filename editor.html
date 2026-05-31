@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>berlinmemo-st</title>
     <meta name="description" content="Custom GeoJSON Map Editor for BerlinMemo." />
@@ -279,6 +280,102 @@
       font-size: 0.75rem;
       color: var(--text-secondary);
     }
+
+    /* Sidebar Transitions & Collapsed State */
+    #editor-sidebar {
+      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+    }
+    
+    #editor-sidebar.collapsed {
+      transform: translateX(-110%);
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    #editor-sidebar.collapsed ~ #map-nav-search-container {
+      left: 76px;
+    }
+
+    #btn-restore-sidebar {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      width: 44px;
+      height: 44px;
+      padding: 0;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 100;
+      background: var(--glass-bg);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--glass-border);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+      color: var(--text-primary);
+      transition: transform 0.2s ease, background 0.2s, opacity 0.2s;
+    }
+
+    #btn-restore-sidebar:hover {
+      background: rgba(255, 255, 255, 0.1);
+      transform: scale(1.05);
+    }
+
+    #btn-restore-sidebar svg {
+      transition: transform 0.3s ease;
+    }
+    
+    #btn-minimize-sidebar:hover {
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
+    }
+
+    /* Mobile Responsive Styles */
+    @media (max-width: 767px) {
+      #editor-sidebar {
+        top: auto;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        max-height: 50vh;
+        border-radius: 20px 20px 0 0;
+        border: 1px solid var(--glass-border);
+        border-bottom: none;
+        box-shadow: 0 -8px 32px rgba(0, 0, 0, 0.4);
+      }
+
+      #editor-sidebar.collapsed {
+        transform: translateY(110%);
+      }
+
+      #editor-sidebar.collapsed ~ #map-nav-search-container {
+        left: 16px;
+      }
+
+      #map-nav-search-container {
+        top: 16px;
+        left: 16px;
+        right: 16px;
+        width: auto;
+      }
+
+      #btn-restore-sidebar {
+        top: auto;
+        bottom: 16px;
+        left: 16px;
+      }
+
+      #btn-minimize-sidebar svg {
+        transform: rotate(-90deg);
+      }
+
+      #btn-restore-sidebar svg {
+        transform: rotate(-90deg);
+      }
+    }
     </style>
     
     <link rel="stylesheet" href="./style.css">
@@ -287,8 +384,15 @@
     <main id="app">
       <div id="editor-sidebar" class="glass-panel">
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-          <h1 style="font-size: 1.2rem; margin: 0; background: linear-gradient(135deg, #FFFFFF 0%, #A5B4FC 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">GeoJSON Editor</h1>
-          <a href="index.html" style="color: var(--text-secondary); text-decoration: none; font-size: 0.85rem;">Zurück</a>
+          <h1 style="font-size: 1.2rem; margin: 0; color: #ffffff;">GeoJSON Editor</h1>
+          <div style="display: flex; align-items: center; gap: 12px;">
+            <button id="btn-minimize-sidebar" title="Minimieren" style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); color: var(--text-secondary); cursor: pointer; padding: 4px; border-radius: 6px; display: flex; align-items: center; justify-content: center; transition: all 0.2s;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <a href="index.html" style="color: var(--text-secondary); text-decoration: none; font-size: 0.85rem;">Zurück</a>
+          </div>
         </div>
         
         <div class="editor-section">
@@ -343,6 +447,13 @@
         </div>
 
       </div>
+
+      <!-- Floating Sidebar Restore Button -->
+      <button id="btn-restore-sidebar" class="hidden" title="Editor-Menü öffnen">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </button>
 
       <!-- Floating Navigation Search Bar -->
       <div id="map-nav-search-container">

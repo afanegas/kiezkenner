@@ -557,7 +557,7 @@ function setupMapInteractions() {
         
         // Let GameManager process the click guess
         const showNames = toggleErrorNames.checked;
-        const showNamesOnAnswered = appState.gameMode === 'streets' && toggleHoverRed.checked;
+        const showNamesOnAnswered = toggleHoverRed.checked;
         gameManager.handleGuess(clickedName, feature, [e.lngLat.lng, e.lngLat.lat], showNames, showNamesOnAnswered);
       }
     }
@@ -572,9 +572,9 @@ function getBezirkForFeatureName(name) {
 function updateHeaderInfo(name, bezirk) {
   bezirkTitleEl.textContent = name;
   ortsteilNameEl.textContent = `Bezirk: ${bezirk}`;
-  bezirkTitleEl.style.background = `linear-gradient(135deg, #FFFFFF 0%, ${getBezirkColor(bezirk)} 100%)`;
-  bezirkTitleEl.style.webkitBackgroundClip = 'text';
-  bezirkTitleEl.style.webkitTextFillColor = 'transparent';
+  bezirkTitleEl.style.color = getBezirkColor(bezirk);
+  bezirkTitleEl.style.background = 'none';
+  bezirkTitleEl.style.webkitTextFillColor = 'initial';
 }
 
 function resetHeaderInfo() {
@@ -582,9 +582,9 @@ function resetHeaderInfo() {
   ortsteilNameEl.textContent = appState.gameMode === 'streets' 
     ? 'Wähle eine Straße' 
     : (appState.gameMode === 'stations' ? 'Wähle einen Bahnhof' : 'Wähle einen Ortsteil');
-  bezirkTitleEl.style.background = `linear-gradient(135deg, #FFFFFF 0%, #A5B4FC 100%)`;
-  bezirkTitleEl.style.webkitBackgroundClip = 'text';
-  bezirkTitleEl.style.webkitTextFillColor = 'transparent';
+  bezirkTitleEl.style.color = '#A5B4FC';
+  bezirkTitleEl.style.background = 'none';
+  bezirkTitleEl.style.webkitTextFillColor = 'initial';
 }
 
 // Data Loader orchestration
@@ -826,7 +826,7 @@ function adaptSettingsMenu() {
   const isStreets = appState.gameMode === 'streets';
   difficultySettingGroup.classList.toggle('hidden', !isStreets);
   mapStyleSettingGroup.classList.toggle('hidden', !isStreets);
-  toggleHoverRedGroup.classList.toggle('hidden', !isStreets);
+  toggleHoverRedGroup.classList.toggle('hidden', false);
   
   // Update radius config visibility
   radiusConfig.classList.toggle('hidden', !isStreets || appState.region !== 'radius');
@@ -912,7 +912,9 @@ regionSelect.addEventListener('change', () => {
     
     ortsteilNameEl.textContent = "Wähle ein Zentrum auf der Karte...";
     bezirkTitleEl.textContent = "Umkreis-Modus";
-    bezirkTitleEl.style.background = `linear-gradient(135deg, #FFFFFF 0%, #A5B4FC 100%)`;
+    bezirkTitleEl.style.color = '#A5B4FC';
+    bezirkTitleEl.style.background = 'none';
+    bezirkTitleEl.style.webkitTextFillColor = 'initial';
   } else {
     appState.radiusMode.isSelectingCenter = false;
     map.getCanvas().style.cursor = '';

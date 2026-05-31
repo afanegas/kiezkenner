@@ -146,9 +146,11 @@ export class GameManager {
       .setLngLat(lngLat)
       .addTo(this.map);
     this.errorMarkers.push(marker);
-    if (!isError) {
-      setTimeout(() => marker.remove(), 1200);
-    }
+    
+    setTimeout(() => {
+      marker.remove();
+      this.errorMarkers = this.errorMarkers.filter(m => m !== marker);
+    }, 1200);
   }
   
   clearErrorMarkers() {
