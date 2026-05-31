@@ -1,0 +1,25 @@
+Linie,Typ,Farbe,HTML-Code,Strecke
+U1,U-Bahn,Gelbgrün,#84BD00,Uhlandstraße → Warschauer Str.
+U2,U-Bahn,Rot,#E2001A,Ruhleben → Pankow
+U3,U-Bahn,Dunkelgrün,#16683D,Nollendorfplatz → Krumme Lanke
+U4,U-Bahn,Gelb,#F5D100,Nollendorfplatz → Innsbrucker Platz
+U5,U-Bahn,Braun,#70411F,Hauptbahnhof → Hönow
+U6,U-Bahn,Lila,#825CA1,Alt-Tegel → Alt-Mariendorf
+U7,U-Bahn,Hellblau,#6DC4E0,Spandau → Rudow
+U8,U-Bahn,Dunkelblau,#003D8F,Wittenau → Hermannstraße
+U9,U-Bahn,Orange,#F07D00,Osloer Str. → Rathaus Steglitz
+S1,S-Bahn,Pink,#DA2279,Oranienburg → Wannsee
+S2,S-Bahn,Grün,#007E38,Bernau → Blankenfelde
+S25,S-Bahn,Grün,#007E38,Hennigsdorf → Teltow Stadt
+S26,S-Bahn,Grün,#007E38,Waidmannslust → Teltow Stadt
+S3,S-Bahn,Blau,#0068A3,Spandau → Erkner
+S41,S-Bahn,Braun,#994D00,Ringbahn (Uhrzeigersinn)
+S42,S-Bahn,Braun,#994D00,Ringbahn (Gegenuhrzeigersinn)
+S46,S-Bahn,Braun,#994D00,Westend → Königs Wusterhausen
+S47,S-Bahn,Braun,#994D00,Spindlersfeld → Hermannstr.
+S5,S-Bahn,Orange,#EF7C00,Spandau → Strausberg Nord
+S7,S-Bahn,Orange,#EF7C00,Potsdam Hbf → Ahrensfelde
+S75,S-Bahn,Orange,#EF7C00,Westkreuz → Wartenberg
+S8,S-Bahn,Blaugrün,#007770,Birkenwerder → Grünau
+S85,S-Bahn,Blaugrün,#007770,Grünau → Pankow
+S9,S-Bahn,Orange,#EF7C00,Spandau → BER Flughafen

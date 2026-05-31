@@ -28,6 +28,33 @@ function getBezirkForPoint(lng, lat, bezirkData) {
 }
 
 let bezirkDataCache = null;
+let trainlinesColorCache = null;
+
+async function loadTrainlineColors() {
+  if (trainlinesColorCache) return trainlinesColorCache;
+  try {
+    const resp = await fetch('./berlin_trainlines.csv');
+    const text = await resp.text();
+    const map = {};
+    const lines = text.split(/\r?\n/);
+    lines.forEach((line, idx) => {
+      if (idx === 0) return; // Header
+      const parts = line.split(',');
+      if (parts.length >= 4) {
+        const key = parts[0].trim();
+        const hex = parts[3].trim();
+        if (key && hex) {
+          map[key] = hex;
+        }
+      }
+    });
+    trainlinesColorCache = map;
+    return map;
+  } catch (err) {
+    console.error("Failed to load trainline colors:", err);
+    return {};
+  }
+}
 
 export const pointEngine = {
   getTypeName(gameMode) {
@@ -53,9 +80,24 @@ export const pointEngine = {
         bezirkDataCache = await bezirkResp.json();
       }
 
+      const lineColors = await loadTrainlineColors();
+
       data.features.forEach(f => {
         f.properties._geomType = 'Point';
-        f.properties.name = f.properties.name;
+        let displayName = f.properties.name;
+        let line_color = '#3b82f6'; // Fallback
+        if (f.properties.line) {
+          const lines = f.properties.line.trim().split(/\s+/).filter(Boolean);
+          if (lines.length > 0) {
+            displayName = `${displayName} (${lines.join(', ')})`;
+            const firstLine = lines[0];
+            if (lineColors[firstLine]) {
+              line_color = lineColors[firstLine];
+            }
+          }
+        }
+        f.properties.name = displayName;
+        f.properties.line_color = line_color;
         
         // Spatial join to find Bezirk
         const coords = f.geometry.coordinates;

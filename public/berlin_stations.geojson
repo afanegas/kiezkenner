@@ -26,7 +26,8 @@
         "wheelchair": "yes",
         "wikidata": "Q572112",
         "wikipedia": "de:Bahnhof Berlin-Tiergarten",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S3 S5 S7 S9"
       },
       "geometry": {
         "type": "Point",
@@ -62,7 +63,8 @@
         "wheelchair": "yes",
         "wikidata": "Q800512",
         "wikipedia": "de:Bahnhof Berlin Storkower Straße",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S41 S42 S8 S85"
       },
       "geometry": {
         "type": "Point",
@@ -96,7 +98,8 @@
         "wheelchair": "yes",
         "wikidata": "Q1647893",
         "wikipedia": "de:Bahnhof Berlin Jannowitzbrücke",
-        "station_type": "S+U-Bahn"
+        "station_type": "S+U-Bahn",
+        "line": "S3 S5 S7 S9 U8"
       },
       "geometry": {
         "type": "Point",
@@ -134,7 +137,8 @@
         "wheelchair": "yes",
         "wikidata": "Q323214",
         "wikipedia": "de:Bahnhof Berlin-Westend",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S41 S42 S46"
       },
       "geometry": {
         "type": "Point",
@@ -175,7 +179,8 @@
         "wheelchair": "yes",
         "wikidata": "Q567336",
         "wikipedia": "de:Bahnhof Berlin-Wannsee",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S1 S7"
       },
       "geometry": {
         "type": "Point",
@@ -207,7 +212,8 @@
         "wheelchair": "yes",
         "wikidata": "Q800502",
         "wikipedia": "de:Bahnhof Berlin Heerstraße",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S3 S9"
       },
       "geometry": {
         "type": "Point",
@@ -240,7 +246,8 @@
         "wheelchair": "yes",
         "wikidata": "Q800488",
         "wikipedia": "de:Bahnhof Berlin Pichelsberg",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S3 S9"
       },
       "geometry": {
         "type": "Point",
@@ -273,7 +280,8 @@
         "wheelchair": "yes",
         "wikidata": "Q800503",
         "wikipedia": "de:Bahnhof Berlin Hohenzollerndamm",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S41 S42 S46"
       },
       "geometry": {
         "type": "Point",
@@ -306,7 +314,8 @@
         "wheelchair": "yes",
         "wikidata": "Q457266",
         "wikipedia": "de:Bahnhof Berlin-Grunewald",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S7"
       },
       "geometry": {
         "type": "Point",
@@ -347,7 +356,8 @@
         "wheelchair": "yes",
         "wikidata": "Q374018",
         "wikipedia": "de:Bahnhof Berlin Bellevue",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S3 S5 S7 S9"
       },
       "geometry": {
         "type": "Point",
@@ -372,7 +382,8 @@
         "wheelchair": "yes",
         "wikidata": "Q656401",
         "wikipedia": "de:U-Bahnhof Ruhleben",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U2"
       },
       "geometry": {
         "type": "Point",
@@ -410,7 +421,8 @@
         "wheelchair": "limited",
         "wikidata": "Q800480",
         "wikipedia": "de:Bahnhof Berlin-Karow",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S2"
       },
       "geometry": {
         "type": "Point",
@@ -446,7 +458,8 @@
         "wheelchair": "yes",
         "wikidata": "Q800504",
         "wikipedia": "de:Bahnhof Berlin Messe Süd",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S3 S9"
       },
       "geometry": {
         "type": "Point",
@@ -488,7 +501,7 @@
         "@id": "node/29046450",
         "atm": "yes",
         "atm:operator": "Sparkasse",
-        "line": "U9",
+        "line": "S3 S5 S7 S9 U2 U9",
         "name": "Zoologischer Garten",
         "network": "Verkehrsverbund Berlin-Brandenburg",
         "network:short": "VBB",
@@ -527,7 +540,8 @@
         "wheelchair": "yes",
         "wikidata": "Q663933",
         "wikipedia": "de:U-Bahnhof Kurfürstendamm",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U1 U9"
       },
       "geometry": {
         "type": "Point",
@@ -572,7 +586,7 @@
         "@id": "node/29046979",
         "atm": "yes",
         "atm:operator": "Sparkasse",
-        "line": "U7;U9",
+        "line": "U7 U9",
         "name": "Berliner Straße",
         "operator": "Berliner Verkehrsbetriebe",
         "public_transport": "station",
@@ -677,7 +691,7 @@
       "type": "Feature",
       "properties": {
         "@id": "node/29047047",
-        "line": "U9",
+        "line": "S1 U9",
         "name": "Rathaus Steglitz",
         "operator": "Berliner Verkehrsbetriebe",
         "public_transport": "station",
@@ -721,7 +735,8 @@
         "wheelchair": "yes",
         "wikidata": "Q323219",
         "wikipedia": "de:Bahnhof Berlin Beusselstraße",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S41 S42"
       },
       "geometry": {
         "type": "Point",
@@ -749,7 +764,8 @@
         "wheelchair": "yes",
         "wikidata": "Q657857",
         "wikipedia": "de:U-Bahnhof Theodor-Heuss-Platz",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U2"
       },
       "geometry": {
         "type": "Point",
@@ -774,7 +790,8 @@
         "wheelchair": "no",
         "wikidata": "Q656431",
         "wikipedia": "de:U-Bahnhof Neu-Westend",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U2"
       },
       "geometry": {
         "type": "Point",
@@ -799,7 +816,8 @@
         "wheelchair": "no",
         "wikidata": "Q869501",
         "wikipedia": "de:U-Bahnhof Deutsche Oper",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U2"
       },
       "geometry": {
         "type": "Point",
@@ -826,7 +844,8 @@
         "wheelchair": "no",
         "wikidata": "Q658361",
         "wikipedia": "de:U-Bahnhof Ernst-Reuter-Platz",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U2"
       },
       "geometry": {
         "type": "Point",
@@ -850,7 +869,8 @@
         "wheelchair": "yes",
         "wikidata": "Q555939",
         "wikipedia": "de:U-Bahnhof Lindauer Allee",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U8"
       },
       "geometry": {
         "type": "Point",
@@ -874,7 +894,8 @@
         "wheelchair": "yes",
         "wikidata": "Q3799011",
         "wikipedia": "de:Bahnhof Berlin Innsbrucker Platz",
-        "station_type": "S+U-Bahn"
+        "station_type": "S+U-Bahn",
+        "line": "S41 S42 S46 U4"
       },
       "geometry": {
         "type": "Point",
@@ -909,7 +930,8 @@
         "wheelchair": "yes",
         "wikidata": "Q15107132",
         "wikipedia": "de:Bahnhof Berlin-Rummelsburg (S-Bahn)",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S3"
       },
       "geometry": {
         "type": "Point",
@@ -944,7 +966,8 @@
         "wheelchair": "yes",
         "wikidata": "Q800473",
         "wikipedia": "de:Bahnhof Berlin-Friedrichsfelde Ost",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S5 S7 S75"
       },
       "geometry": {
         "type": "Point",
@@ -968,7 +991,8 @@
         "wheelchair": "yes",
         "wikidata": "Q668574",
         "wikipedia": "de:U-Bahnhof Bayerischer Platz",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U4 U7"
       },
       "geometry": {
         "type": "Point",
@@ -1004,7 +1028,8 @@
         "wheelchair:description": "Zugang über Rampe / Schräge",
         "wikidata": "Q2180548",
         "wikipedia": "en:Berlin Poelchaustraße station",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S7"
       },
       "geometry": {
         "type": "Point",
@@ -1039,7 +1064,8 @@
         "wheelchair": "yes",
         "wikidata": "Q2150651",
         "wikipedia": "de:Bahnhof Berlin Raoul-Wallenberg-Straße",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S7"
       },
       "geometry": {
         "type": "Point",
@@ -1074,7 +1100,8 @@
         "wheelchair": "yes",
         "wikidata": "Q1973570",
         "wikipedia": "de:Bahnhof Berlin Mehrower Allee",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S7"
       },
       "geometry": {
         "type": "Point",
@@ -1108,7 +1135,8 @@
         "wheelchair": "yes",
         "wikidata": "Q800486",
         "wikipedia": "de:Bahnhof Berlin-Marzahn",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S7"
       },
       "geometry": {
         "type": "Point",
@@ -1147,7 +1175,8 @@
         "wikidata": "Q552867",
         "wikimedia_commons": "File:U-Bahnhof Wuhletal.jpg",
         "wikipedia": "de:Bahnhof Berlin Wuhletal",
-        "station_type": "S+U-Bahn"
+        "station_type": "S+U-Bahn",
+        "line": "S5 U5"
       },
       "geometry": {
         "type": "Point",
@@ -1184,7 +1213,8 @@
         "wheelchair": "yes",
         "wikidata": "Q800484",
         "wikipedia": "de:Bahnhof Berlin-Mahlsdorf",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S5"
       },
       "geometry": {
         "type": "Point",
@@ -1217,7 +1247,8 @@
         "wheelchair": "no",
         "wikidata": "Q4892435",
         "wikipedia": "de:Bahnhof Berlin-Hirschgarten",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S3"
       },
       "geometry": {
         "type": "Point",
@@ -1249,7 +1280,8 @@
         "uic_ref": "8089088",
         "wheelchair": "yes",
         "wikidata": "Q4892371",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S47"
       },
       "geometry": {
         "type": "Point",
@@ -1282,7 +1314,8 @@
         "wheelchair": "no",
         "wikidata": "Q477185",
         "wikipedia": "de:Bahnhof Berlin Brandenburger Tor",
-        "station_type": "S+U-Bahn"
+        "station_type": "S+U-Bahn",
+        "line": "S1 S2 S25 S26 U5"
       },
       "geometry": {
         "type": "Point",
@@ -1318,7 +1351,8 @@
         "wheelchair": "no",
         "wikidata": "Q5530084",
         "wikipedia": "en:Gehrenseestraße station",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S75"
       },
       "geometry": {
         "type": "Point",
@@ -1356,7 +1390,8 @@
         "wheelchair:description": "Rampe kein WC",
         "wikidata": "Q111307677",
         "wikipedia": "de:Bahnhof Berlin-Hohenschönhausen",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S75"
       },
       "geometry": {
         "type": "Point",
@@ -1395,7 +1430,8 @@
         "wheelchair:description": "Rampen City WC: Ausgang Egon-Erwin-Kisch Str.",
         "wikidata": "Q2784530",
         "wikipedia": "en:Wartenberg station",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S75"
       },
       "geometry": {
         "type": "Point",
@@ -1429,7 +1465,8 @@
         "wheelchair": "no",
         "wikidata": "Q800485",
         "wikipedia": "de:Bahnhof Berlin-Marienfelde",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S2"
       },
       "geometry": {
         "type": "Point",
@@ -1455,7 +1492,8 @@
         "wheelchair": "yes",
         "wikidata": "Q21235258",
         "wikipedia": "de:Bahnhof Berlin Hermannstraße",
-        "station_type": "S+U-Bahn"
+        "station_type": "S+U-Bahn",
+        "line": "S41 S42 S45 S46 S47 U8"
       },
       "geometry": {
         "type": "Point",
@@ -1482,7 +1520,8 @@
         "wheelchair": "yes",
         "wikidata": "Q686132",
         "wikipedia": "de:U-Bahnhof Bismarckstraße",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U2 U7"
       },
       "geometry": {
         "type": "Point",
@@ -1512,7 +1551,8 @@
         "wheelchair:description": "Seit 01.07.2014 hat der Bahnhof einen Fahrstuhl Mittelinsel R Wagner Straße",
         "wikidata": "Q662201",
         "wikipedia": "de:U-Bahnhof Richard-Wagner-Platz",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U7"
       },
       "geometry": {
         "type": "Point",
@@ -1535,7 +1575,7 @@
         "network": "Verkehrsverbund Berlin-Brandenburg",
         "network:short": "VBB",
         "note": "Für den Personenverkehr benutzt die Bahn in der Regel das Kürzel BWKR und nicht BWKRR oder BWKR.",
-        "official_name": "Berlin Westkreuz (Ringbahn)",
+        "official_name": "Berlin Westkreuz",
         "operator": "DB Netz AG",
         "public_transport": "station",
         "railway": "halt",
@@ -1547,7 +1587,8 @@
         "wheelchair": "yes",
         "wikidata": "Q678125",
         "wikipedia": "de:Bahnhof Berlin Westkreuz",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S3 S41 S42 S46 S5 S7 S9"
       },
       "geometry": {
         "type": "Point",
@@ -1571,7 +1612,8 @@
         "wheelchair": "yes",
         "wikidata": "Q571170",
         "wikipedia": "de:U-Bahnhof Eisenacher Straße",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U7"
       },
       "geometry": {
         "type": "Point",
@@ -1595,7 +1637,8 @@
         "wheelchair": "yes",
         "wikidata": "Q554477",
         "wikipedia": "de:U-Bahnhof Rathaus Reinickendorf",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U8"
       },
       "geometry": {
         "type": "Point",
@@ -1632,7 +1675,8 @@
         "wheelchair": "yes",
         "wikidata": "Q319809",
         "wikipedia": "de:Bahnhof Berlin Julius-Leber-Brücke",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S1"
       },
       "geometry": {
         "type": "Point",
@@ -1656,7 +1700,8 @@
         "wheelchair": "yes",
         "wikidata": "Q656081",
         "wikipedia": "de:U-Bahnhof Südstern",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U7"
       },
       "geometry": {
         "type": "Point",
@@ -1680,7 +1725,8 @@
         "wheelchair": "yes",
         "wikidata": "Q543907",
         "wikipedia": "de:Bahnhof Berlin Yorckstraße",
-        "station_type": "S+U-Bahn"
+        "station_type": "S+U-Bahn",
+        "line": "S1 S2 S25 S26 U7"
       },
       "geometry": {
         "type": "Point",
@@ -1706,7 +1752,8 @@
         "wheelchair": "yes",
         "wikidata": "Q429781",
         "wikipedia": "de:U-Bahnhof Friedrichsfelde",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U5"
       },
       "geometry": {
         "type": "Point",
@@ -1749,7 +1796,8 @@
         "wheelchair": "yes",
         "wikidata": "Q552872",
         "wikipedia": "de:Bahnhof Berlin Frankfurter Allee",
-        "station_type": "S+U-Bahn"
+        "station_type": "S+U-Bahn",
+        "line": "S41 S42 S8 S85 U5"
       },
       "geometry": {
         "type": "Point",
@@ -1775,7 +1823,8 @@
         "wheelchair:source": "http://wheelmap.org",
         "wikidata": "Q668618",
         "wikipedia": "de:U-Bahnhof Gneisenaustraße",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U7"
       },
       "geometry": {
         "type": "Point",
@@ -1813,7 +1862,8 @@
         "wheelchair": "yes",
         "wikidata": "Q559274",
         "wikipedia": "de:Bahnhof Berlin Treptower Park",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S41 S42 S8 S85 S9"
       },
       "geometry": {
         "type": "Point",
@@ -1844,7 +1894,8 @@
         "wheelchair": "yes",
         "wikidata": "Q800506",
         "wikipedia": "de:Bahnhof Berlin Olympiastadion",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S3 S9"
       },
       "geometry": {
         "type": "Point",
@@ -1877,7 +1928,8 @@
         "wheelchair": "yes",
         "wikidata": "Q800487",
         "wikipedia": "de:Bahnhof Berlin-Schulzendorf",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S25"
       },
       "geometry": {
         "type": "Point",
@@ -1901,7 +1953,8 @@
         "wheelchair": "yes",
         "wikidata": "Q656409",
         "wikipedia": "de:U-Bahnhof Kaiserdamm",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U2"
       },
       "geometry": {
         "type": "Point",
@@ -1934,7 +1987,8 @@
         "wheelchair": "yes",
         "wikidata": "Q571403",
         "wikipedia": "de:Bahnhof Berlin Schönhauser Allee",
-        "station_type": "S+U-Bahn"
+        "station_type": "S+U-Bahn",
+        "line": "S41 S42 S8 S85 U2"
       },
       "geometry": {
         "type": "Point",
@@ -1967,7 +2021,8 @@
         "wheelchair": "yes",
         "wikidata": "Q302810",
         "wikipedia": "de:Bahnhof Berlin Heidelberger Platz",
-        "station_type": "S+U-Bahn"
+        "station_type": "S+U-Bahn",
+        "line": "S41 S42 S46 U3"
       },
       "geometry": {
         "type": "Point",
@@ -2004,7 +2059,8 @@
         "wheelchair": "yes",
         "wikidata": "Q800474",
         "wikipedia": "de:Bahnhof Berlin-Friedrichshagen",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S3"
       },
       "geometry": {
         "type": "Point",
@@ -2042,7 +2098,8 @@
         "wheelchair": "yes",
         "wikidata": "Q800514",
         "wikipedia": "de:Bahnhof Berlin Wuhlheide",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S3"
       },
       "geometry": {
         "type": "Point",
@@ -2074,7 +2131,8 @@
         "wheelchair": "yes",
         "wikidata": "Q5612896",
         "wikipedia": "de:Bahnhof Berlin Grünbergallee",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S45 S9"
       },
       "geometry": {
         "type": "Point",
@@ -2109,7 +2167,8 @@
         "wheelchair": "yes",
         "wikidata": "Q464170",
         "wikipedia": "de:Bahnhof Berlin-Karlshorst",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S3"
       },
       "geometry": {
         "type": "Point",
@@ -2147,7 +2206,8 @@
         "wheelchair": "yes",
         "wikidata": "Q800479",
         "wikipedia": "de:Bahnhof Berlin-Köpenick",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S3"
       },
       "geometry": {
         "type": "Point",
@@ -2181,7 +2241,8 @@
         "wheelchair": "limited",
         "wikidata": "Q829009",
         "wikipedia": "de:Bahnhof Berlin-Rummelsburg (Betriebsbahnhof)",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S3"
       },
       "geometry": {
         "type": "Point",
@@ -2208,7 +2269,8 @@
         "wheelchair": "yes",
         "wikidata": "Q551802",
         "wikipedia": "de:U-Bahnhof Elsterwerdaer Platz",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U5"
       },
       "geometry": {
         "type": "Point",
@@ -2234,7 +2296,8 @@
         "wheelchair": "yes",
         "wikidata": "Q551805",
         "wikipedia": "de:U-Bahnhof Biesdorf-Süd",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U5"
       },
       "geometry": {
         "type": "Point",
@@ -2276,7 +2339,8 @@
         "wheelchair:description": "Hat zwei Eingänge, nur der an der Bleibtreustraße hat einen Fahrstuhl.",
         "wikidata": "Q554382",
         "wikipedia": "de:Bahnhof Berlin Savignyplatz",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S3 S5 S7 S9"
       },
       "geometry": {
         "type": "Point",
@@ -2312,7 +2376,8 @@
         "uic_ref": "8089131",
         "wheelchair": "yes",
         "wikidata": "Q638604",
-        "station_type": "S+U-Bahn"
+        "station_type": "S+U-Bahn",
+        "line": "S41 S42 U6"
       },
       "geometry": {
         "type": "Point",
@@ -2347,7 +2412,8 @@
         "wheelchair": "yes",
         "wikidata": "Q800476",
         "wikipedia": "de:Bahnhof Berlin-Halensee",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S41 S42 S46"
       },
       "geometry": {
         "type": "Point",
@@ -2390,7 +2456,8 @@
         "wheelchair": "yes",
         "wikidata": "Q660045",
         "wikipedia": "de:Bahnhof Berlin Ostkreuz",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S3 S41 S42 S5 S7 S75 S8 S85"
       },
       "geometry": {
         "type": "Point",
@@ -2411,12 +2478,12 @@
         "departures_board": "realtime",
         "departures_board:speech_output": "no",
         "light_rail": "yes",
-        "name": "Südkreuz (Ringbahn)",
+        "name": "Südkreuz",
         "network": "Verkehrsverbund Berlin-Brandenburg",
         "network:short": "VBB",
         "network:wikidata": "Q315451",
         "note": "Für den Personenverkehr benutzt die Bahn in der Regel das Kürzel BPAF und nicht BSKR oder BSKV.",
-        "official_name": "Berlin Südkreuz (Ringbahn)",
+        "official_name": "Berlin Südkreuz",
         "operator": "DB InfraGO AG",
         "public_transport": "station",
         "railway": "station",
@@ -2434,7 +2501,8 @@
         "wheelchair:description": "WC für Rollifahrer befindet sich links vom Eingang und ist gut ausgeschildert",
         "wikidata": "Q111323139",
         "wikipedia": "de:Bahnhof Berlin Südkreuz",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S2 S25 S26 S41 S42 S45 S46"
       },
       "geometry": {
         "type": "Point",
@@ -2476,7 +2544,8 @@
         "wheelchair": "yes",
         "wikidata": "Q678286",
         "wikipedia": "de:Bahnhof Berlin Gesundbrunnen",
-        "station_type": "S+U-Bahn"
+        "station_type": "S+U-Bahn",
+        "line": "S1 S2 S25 S26 S41 S42 U8"
       },
       "geometry": {
         "type": "Point",
@@ -2509,7 +2578,8 @@
         "wheelchair": "yes",
         "wikidata": "Q4892366",
         "wikipedia": "de:Bahnhof Berlin-Pankow-Heinersdorf",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S2 S8"
       },
       "geometry": {
         "type": "Point",
@@ -2542,7 +2612,8 @@
         "wheelchair": "yes",
         "wikidata": "Q637052",
         "wikipedia": "de:Bahnhof Berlin-Nikolassee",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S1 S7"
       },
       "geometry": {
         "type": "Point",
@@ -2577,7 +2648,8 @@
         "wheelchair": "yes",
         "wikidata": "Q800501",
         "wikipedia": "de:Bahnhof Berlin Feuerbachstraße",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S1"
       },
       "geometry": {
         "type": "Point",
@@ -2608,7 +2680,8 @@
         "wheelchair": "yes",
         "wikidata": "Q663231",
         "wikipedia": "de:U-Bahnhof Rosenthaler Platz",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U8"
       },
       "geometry": {
         "type": "Point",
@@ -2644,7 +2717,8 @@
         "wheelchair": "yes",
         "wikidata": "Q800509",
         "wikipedia": "de:Bahnhof Berlin-Schlachtensee",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S1"
       },
       "geometry": {
         "type": "Point",
@@ -2679,7 +2753,8 @@
         "wheelchair": "yes",
         "wikidata": "Q571405",
         "wikipedia": "de:Bahnhof Berlin-Tempelhof",
-        "station_type": "S+U-Bahn"
+        "station_type": "S+U-Bahn",
+        "line": "S41 S42 S45 S46 U6"
       },
       "geometry": {
         "type": "Point",
@@ -2716,7 +2791,8 @@
         "wheelchair": "no",
         "wikidata": "Q673721",
         "wikipedia": "de:Berlin Nordbahnhof",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S1 S2 S25 S26"
       },
       "geometry": {
         "type": "Point",
@@ -2741,7 +2817,8 @@
         "wheelchair": "yes",
         "wikidata": "Q678372",
         "wikipedia": "de:U-Bahnhof Gleisdreieck",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U1 U2 U3"
       },
       "geometry": {
         "type": "Point",
@@ -2775,7 +2852,8 @@
         "wheelchair": "yes",
         "wikidata": "Q480249",
         "wikipedia": "de:Bahnhof Berlin Oranienburger Straße",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S1 S2 S25 S26"
       },
       "geometry": {
         "type": "Point",
@@ -2813,7 +2891,8 @@
         "wheelchair": "yes",
         "wikidata": "Q321266",
         "wikipedia": "de:Bahnhof Berlin Messe Nord/ICC",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S41 S42 S46"
       },
       "geometry": {
         "type": "Point",
@@ -2848,7 +2927,8 @@
         "wheelchair": "yes",
         "wikidata": "Q800513",
         "wikipedia": "de:Bahnhof Berlin Sundgauer Straße",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S1"
       },
       "geometry": {
         "type": "Point",
@@ -2881,7 +2961,8 @@
         "wheelchair": "yes",
         "wikidata": "Q315891",
         "wikipedia": "de:Bahnhof Berlin Mexikoplatz",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S1"
       },
       "geometry": {
         "type": "Point",
@@ -2916,7 +2997,8 @@
         "wheelchair": "yes",
         "wikidata": "Q481276",
         "wikipedia": "de:Bahnhof Berlin Humboldthain",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S1 S2 S25 S26"
       },
       "geometry": {
         "type": "Point",
@@ -2953,7 +3035,8 @@
         "wheelchair": "yes",
         "wikidata": "Q32662318",
         "wikipedia": "de:Bahnhof Berlin Bornholmer Straße",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S1 S2 S25 S26 S8 S85"
       },
       "geometry": {
         "type": "Point",
@@ -2988,7 +3071,8 @@
         "wheelchair": "limited",
         "wikidata": "Q800496",
         "wikipedia": "de:Bahnhof Berlin Alt-Reinickendorf",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S25"
       },
       "geometry": {
         "type": "Point",
@@ -3021,7 +3105,8 @@
         "wheelchair": "yes",
         "wikidata": "Q475553",
         "wikipedia": "de:Bahnhof Berlin Karl-Bonhoeffer-Nervenklinik",
-        "station_type": "S+U-Bahn"
+        "station_type": "S+U-Bahn",
+        "line": "S25 U8"
       },
       "geometry": {
         "type": "Point",
@@ -3054,7 +3139,8 @@
         "wheelchair": "yes",
         "wikidata": "Q800500",
         "wikipedia": "de:Bahnhof Berlin Eichborndamm",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S25"
       },
       "geometry": {
         "type": "Point",
@@ -3087,7 +3173,8 @@
         "wheelchair": "yes",
         "wikidata": "Q800493",
         "wikipedia": "de:Bahnhof Berlin-Tegel",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S25"
       },
       "geometry": {
         "type": "Point",
@@ -3122,7 +3209,8 @@
         "wheelchair": "yes",
         "wikidata": "Q800499",
         "wikipedia": "de:Bahnhof Berlin Buckower Chaussee",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S2"
       },
       "geometry": {
         "type": "Point",
@@ -3155,7 +3243,8 @@
         "wheelchair": "yes",
         "wikidata": "Q800481",
         "wikipedia": "de:Bahnhof Berlin-Lankwitz",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S25 S26"
       },
       "geometry": {
         "type": "Point",
@@ -3189,7 +3278,8 @@
         "wheelchair": "yes",
         "wikidata": "Q800475",
         "wikipedia": "de:Bahnhof Berlin-Heiligensee",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S25"
       },
       "geometry": {
         "type": "Point",
@@ -3227,7 +3317,8 @@
         "wheelchair": "no",
         "wikidata": "Q543855",
         "wikipedia": "de:Bahnhof Berlin-Schöneberg",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S1 S41 S42 S46"
       },
       "geometry": {
         "type": "Point",
@@ -3267,7 +3358,8 @@
         "wheelchair": "yes",
         "wikidata": "Q800483",
         "wikipedia": "de:Bahnhof Berlin-Lichterfelde West",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S1"
       },
       "geometry": {
         "type": "Point",
@@ -3303,7 +3395,8 @@
         "wheelchair": "limited",
         "wikidata": "Q683239",
         "wikipedia": "de:Berlin Ostbahnhof",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S3 S5 S7 S9"
       },
       "geometry": {
         "type": "Point",
@@ -3337,7 +3430,8 @@
         "wheelchair": "yes",
         "wikidata": "Q800469",
         "wikipedia": "de:Bahnhof Berlin-Blankenburg",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S2 S8"
       },
       "geometry": {
         "type": "Point",
@@ -3374,7 +3468,8 @@
         "wheelchair": "yes",
         "wikidata": "Q800491",
         "wikipedia": "de:Bahnhof Berlin-Stresow",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S3 S9"
       },
       "geometry": {
         "type": "Point",
@@ -3409,7 +3504,8 @@
         "wheelchair": "yes",
         "wikidata": "Q800472",
         "wikipedia": "de:Bahnhof Berlin-Frohnau",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S1"
       },
       "geometry": {
         "type": "Point",
@@ -3443,7 +3539,8 @@
         "wheelchair": "limited",
         "wikidata": "Q263189",
         "wikipedia": "de:Bahnhof Berlin-Hermsdorf",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S1"
       },
       "geometry": {
         "type": "Point",
@@ -3478,7 +3575,8 @@
         "wheelchair": "yes",
         "wikidata": "Q800492",
         "wikipedia": "de:Bahnhof Berlin-Waidmannslust",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S1 S26"
       },
       "geometry": {
         "type": "Point",
@@ -3515,7 +3613,8 @@
         "wheelchair:description": "access only via south east entrance near the undergound station Zugang nur über den süd-östlichen Eingang bei der U-Bahn-Station",
         "wikidata": "Q175212",
         "wikipedia": "de:Bahnhof Berlin-Wittenau (Wilhelmsruher Damm)",
-        "station_type": "S+U-Bahn"
+        "station_type": "S+U-Bahn",
+        "line": "S1 S26 U8"
       },
       "geometry": {
         "type": "Point",
@@ -3548,7 +3647,8 @@
         "wheelchair": "yes",
         "wikidata": "Q800495",
         "wikipedia": "de:Bahnhof Berlin-Wilhelmsruh",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S1 S26"
       },
       "geometry": {
         "type": "Point",
@@ -3585,7 +3685,8 @@
         "uic_name": "Berlin Betriebsbf Schöneweide",
         "wheelchair": "yes",
         "wikidata": "Q4526101",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S45 S46 S8 S85 S9"
       },
       "geometry": {
         "type": "Point",
@@ -3622,7 +3723,8 @@
         "wheelchair": "yes",
         "wikidata": "Q800490",
         "wikipedia": "de:Bahnhof Berlin-Schönholz",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S1 S25 S26"
       },
       "geometry": {
         "type": "Point",
@@ -3657,7 +3759,8 @@
         "wheelchair": "yes",
         "wikidata": "Q32661483",
         "wikipedia": "de:Bahnhof Berlin Prenzlauer Allee",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S41 S42 S8 S85"
       },
       "geometry": {
         "type": "Point",
@@ -3691,7 +3794,8 @@
         "wheelchair": "yes",
         "wikidata": "Q800497",
         "wikipedia": "de:Bahnhof Berlin Attilastraße",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S2"
       },
       "geometry": {
         "type": "Point",
@@ -3716,7 +3820,8 @@
         "wheelchair": "yes",
         "wikidata": "Q660066",
         "wikipedia": "de:U-Bahnhof Stadtmitte",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U2 U6"
       },
       "geometry": {
         "type": "Point",
@@ -3758,7 +3863,8 @@
         "wheelchair": "limited",
         "wikidata": "Q323551",
         "wikipedia": "de:Bahnhof Berlin-Adlershof",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S45 S46 S8 S85 S9"
       },
       "geometry": {
         "type": "Point",
@@ -3792,7 +3898,8 @@
         "wheelchair": "yes",
         "wikidata": "Q4736651",
         "wikipedia": "de:Bahnhof Berlin-Altglienicke",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S45 S9"
       },
       "geometry": {
         "type": "Point",
@@ -3825,7 +3932,8 @@
         "wheelchair": "yes",
         "wikidata": "Q324777",
         "wikipedia": "de:Bahnhof Berlin-Grünau",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S46 S8 S85"
       },
       "geometry": {
         "type": "Point",
@@ -3862,7 +3970,8 @@
         "website": "https://sbahn.berlin/fahren/bahnhofsuebersicht/schoeneweide/",
         "wheelchair": "yes",
         "wikidata": "Q111323931",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S45 S46 S47 S8 S85 S9"
       },
       "geometry": {
         "type": "Point",
@@ -3904,7 +4013,8 @@
         "wheelchair": "yes",
         "wikidata": "Q324336",
         "wikipedia": "de:Bahnhof Berlin-Baumschulenweg",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S45 S46 S47 S8 S85 S9"
       },
       "geometry": {
         "type": "Point",
@@ -3941,7 +4051,8 @@
         "wheelchair": "yes",
         "wikidata": "Q800505",
         "wikipedia": "de:Bahnhof Berlin Köllnische Heide",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S45 S46 S47"
       },
       "geometry": {
         "type": "Point",
@@ -3981,7 +4092,8 @@
         "wheelchair": "yes",
         "wikidata": "Q569905",
         "wikipedia": "de:Bahnhof Berlin-Neukölln",
-        "station_type": "S+U-Bahn"
+        "station_type": "S+U-Bahn",
+        "line": "S41 S42 S45 S46 S47 U7"
       },
       "geometry": {
         "type": "Point",
@@ -4013,7 +4125,8 @@
         "railway:station_category": "6",
         "station": "light_rail",
         "wikidata": "Q15192700",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S47"
       },
       "geometry": {
         "type": "Point",
@@ -4052,7 +4165,8 @@
         "wheelchair": "yes",
         "wikidata": "Q7205917",
         "wikipedia": "de:Bahnhof Berlin-Plänterwald",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S8 S85 S9"
       },
       "geometry": {
         "type": "Point",
@@ -4090,7 +4204,8 @@
         "wheelchair": "yes",
         "wikidata": "Q481364",
         "wikipedia": "de:Bahnhof Berlin Sonnenallee",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S41 S42"
       },
       "geometry": {
         "type": "Point",
@@ -4129,7 +4244,8 @@
         "wheelchair": "yes",
         "wikidata": "Q664036",
         "wikipedia": "de:Bahnhof Berlin Warschauer Straße",
-        "station_type": "S+U-Bahn"
+        "station_type": "S+U-Bahn",
+        "line": "S3 S5 S7 S75 S9 U1 U3"
       },
       "geometry": {
         "type": "Point",
@@ -4165,7 +4281,8 @@
         "wheelchair": "yes",
         "wikidata": "Q439246",
         "wikipedia": "de:Bahnhof Berlin Greifswalder Straße",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S41 S42 S8 S85"
       },
       "geometry": {
         "type": "Point",
@@ -4192,7 +4309,8 @@
         "wheelchair": "no",
         "wikidata": "Q554391",
         "wikipedia": "de:U-Bahnhof Seestraße",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U6"
       },
       "geometry": {
         "type": "Point",
@@ -4227,7 +4345,8 @@
         "wheelchair": "yes",
         "wikidata": "Q1960809",
         "wikipedia": "de:U-Bahnhof Leopoldplatz",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U6 U9"
       },
       "geometry": {
         "type": "Point",
@@ -4259,7 +4378,8 @@
         "wheelchair": "yes",
         "wikidata": "Q464094",
         "wikipedia": "de:Bahnhof Berlin Bundesplatz",
-        "station_type": "S+U-Bahn"
+        "station_type": "S+U-Bahn",
+        "line": "S41 S42 S46 U9"
       },
       "geometry": {
         "type": "Point",
@@ -4295,7 +4415,8 @@
         "wheelchair": "yes",
         "wikidata": "Q702596",
         "wikipedia": "de:Bahnhof Berlin-Charlottenburg",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S3 S5 S7 S9"
       },
       "geometry": {
         "type": "Point",
@@ -4323,7 +4444,8 @@
         "wheelchair": "yes",
         "wikidata": "Q554399",
         "wikipedia": "de:U-Bahnhof Naturkundemuseum",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U6"
       },
       "geometry": {
         "type": "Point",
@@ -4356,7 +4478,8 @@
         "wheelchair": "yes",
         "wikidata": "Q3672596",
         "wikipedia": "de:Bahnhof Berlin Schichauweg",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S2"
       },
       "geometry": {
         "type": "Point",
@@ -4384,7 +4507,8 @@
         "wheelchair": "yes",
         "wikidata": "Q663308",
         "wikipedia": "de:U-Bahnhof Voltastraße",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U8"
       },
       "geometry": {
         "type": "Point",
@@ -4418,7 +4542,8 @@
         "wheelchair": "no",
         "wikidata": "Q374225",
         "wikipedia": "de:U-Bahnhof Moritzplatz",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U8"
       },
       "geometry": {
         "type": "Point",
@@ -4444,7 +4569,8 @@
         "wheelchair": "no",
         "wikidata": "Q666868",
         "wikipedia": "de:U-Bahnhof Schönleinstraße",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U8"
       },
       "geometry": {
         "type": "Point",
@@ -4481,7 +4607,8 @@
         "wheelchair": "yes",
         "wikidata": "Q111311299",
         "wikipedia": "de:Bahnhof Berlin-Lichterfelde Ost",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S25 S26"
       },
       "geometry": {
         "type": "Point",
@@ -4507,7 +4634,8 @@
         "wheelchair": "yes",
         "wikidata": "Q819495",
         "wikipedia": "de:U-Bahnhof Boddinstraße",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U8"
       },
       "geometry": {
         "type": "Point",
@@ -4531,7 +4659,8 @@
         "wheelchair": "yes",
         "wikidata": "Q668563",
         "wikipedia": "de:U-Bahnhof Leinestraße",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U8"
       },
       "geometry": {
         "type": "Point",
@@ -4557,7 +4686,8 @@
         "wheelchair:description": "Fahrstuhl",
         "wikidata": "Q570999",
         "wikipedia": "de:U-Bahnhof Strausberger Platz",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U5"
       },
       "geometry": {
         "type": "Point",
@@ -4583,7 +4713,8 @@
         "wikidata": "Q668585",
         "wikimedia_commons": "File:Berlin U-Bf Dahlem-Dorf asv2023-06 img1.jpg",
         "wikipedia": "de:U-Bahnhof Dahlem-Dorf",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U3"
       },
       "geometry": {
         "type": "Point",
@@ -4607,7 +4738,8 @@
         "wheelchair": "yes",
         "wikidata": "Q551768",
         "wikipedia": "de:U-Bahnhof Weberwiese",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U5"
       },
       "geometry": {
         "type": "Point",
@@ -4631,7 +4763,8 @@
         "wheelchair": "yes",
         "wikidata": "Q571836",
         "wikipedia": "de:U-Bahnhof Grenzallee",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U7"
       },
       "geometry": {
         "type": "Point",
@@ -4656,7 +4789,8 @@
         "wheelchair": "yes",
         "wikidata": "Q253850",
         "wikipedia": "de:U-Bahnhof Rehberge",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U6"
       },
       "geometry": {
         "type": "Point",
@@ -4692,7 +4826,8 @@
         "wheelchair": "yes",
         "wikidata": "Q695244",
         "wikipedia": "de:Berlin Anhalter Bahnhof",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S1 S2 S25 S26"
       },
       "geometry": {
         "type": "Point",
@@ -4729,7 +4864,8 @@
         "wheelchair": "limited",
         "wikidata": "Q672579",
         "wikipedia": "de:Bahnhof Berlin Potsdamer Platz",
-        "station_type": "S+U-Bahn"
+        "station_type": "S+U-Bahn",
+        "line": "S1 S2 S25 S26 U2"
       },
       "geometry": {
         "type": "Point",
@@ -4754,7 +4890,8 @@
         "wheelchair": "yes",
         "wikidata": "Q658302",
         "wikipedia": "de:U-Bahnhof Hallesches Tor",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U1 U3 U6"
       },
       "geometry": {
         "type": "Point",
@@ -4796,7 +4933,8 @@
         "wheelchair": "yes",
         "wikidata": "Q1097",
         "wikipedia": "de:Berlin Hauptbahnhof",
-        "station_type": "S+U-Bahn"
+        "station_type": "S+U-Bahn",
+        "line": "S3 S5 S7 S9 U5"
       },
       "geometry": {
         "type": "Point",
@@ -4820,7 +4958,8 @@
         "wheelchair": "yes",
         "wikidata": "Q571845",
         "wikipedia": "de:U-Bahnhof Britz-Süd",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U7"
       },
       "geometry": {
         "type": "Point",
@@ -4845,7 +4984,8 @@
         "wheelchair": "yes",
         "wikidata": "Q638553",
         "wikipedia": "de:U-Bahnhof Johannisthaler Chaussee",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U7"
       },
       "geometry": {
         "type": "Point",
@@ -4869,7 +5009,8 @@
         "wheelchair": "yes",
         "wikidata": "Q571467",
         "wikipedia": "de:U-Bahnhof Lipschitzallee",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U7"
       },
       "geometry": {
         "type": "Point",
@@ -4893,7 +5034,8 @@
         "wheelchair": "yes",
         "wikidata": "Q660024",
         "wikipedia": "de:U-Bahnhof Rudow",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U7"
       },
       "geometry": {
         "type": "Point",
@@ -4917,7 +5059,8 @@
         "wheelchair": "yes",
         "wikidata": "Q572096",
         "wikipedia": "de:U-Bahnhof Zwickauer Damm",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U7"
       },
       "geometry": {
         "type": "Point",
@@ -4952,7 +5095,8 @@
         "wheelchair": "yes",
         "wikidata": "Q6543354",
         "wikipedia": "de:Bahnhof Berlin-Lichtenrade",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S2"
       },
       "geometry": {
         "type": "Point",
@@ -4977,7 +5121,8 @@
         "wheelchair": "yes",
         "wikidata": "Q559239",
         "wikipedia": "de:U-Bahnhof Afrikanische Straße",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U6"
       },
       "geometry": {
         "type": "Point",
@@ -5003,7 +5148,8 @@
         "wheelchair": "yes",
         "wikidata": "Q555916",
         "wikipedia": "de:U-Bahnhof Kurt-Schumacher-Platz",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U6"
       },
       "geometry": {
         "type": "Point",
@@ -5029,7 +5175,8 @@
         "wheelchair": "yes",
         "wikidata": "Q557586",
         "wikipedia": "de:U-Bahnhof Scharnweberstraße",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U6"
       },
       "geometry": {
         "type": "Point",
@@ -5060,7 +5207,8 @@
         "surveillance": "outdoor",
         "wheelchair": "yes",
         "wikidata": "Q557582",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U6"
       },
       "geometry": {
         "type": "Point",
@@ -5085,7 +5233,8 @@
         "wheelchair": "no",
         "wikidata": "Q557566",
         "wikipedia": "de:U-Bahnhof Holzhauser Straße",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U6"
       },
       "geometry": {
         "type": "Point",
@@ -5110,7 +5259,8 @@
         "wheelchair": "no",
         "wikidata": "Q525185",
         "wikipedia": "de:U-Bahnhof Borsigwerke",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U6"
       },
       "geometry": {
         "type": "Point",
@@ -5146,7 +5296,8 @@
         "wheelchair": "yes",
         "wikidata": "Q800478",
         "wikipedia": "de:Bahnhof Berlin-Kaulsdorf",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S5"
       },
       "geometry": {
         "type": "Point",
@@ -5188,7 +5339,8 @@
         "wikidata": "Q689312",
         "wikimedia_commons": "Category:Bahnhof Berlin Hackescher Markt",
         "wikipedia": "de:Bahnhof Berlin Hackescher Markt",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S3 S5 S7 S9"
       },
       "geometry": {
         "type": "Point",
@@ -5213,7 +5365,8 @@
         "wheelchair": "yes",
         "wikidata": "Q661876",
         "wikipedia": "de:U-Bahnhof Weinmeisterstraße",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U8"
       },
       "geometry": {
         "type": "Point",
@@ -5252,7 +5405,8 @@
         "wheelchair": "yes",
         "wikidata": "Q702402",
         "wikipedia": "de:Bahnhof Berlin Friedrichstraße",
-        "station_type": "S+U-Bahn"
+        "station_type": "S+U-Bahn",
+        "line": "S1 S2 S25 S26 S3 S5 S7 S9 U6"
       },
       "geometry": {
         "type": "Point",
@@ -5282,7 +5436,8 @@
         "wheelchair": "yes",
         "wikidata": "Q658391",
         "wikipedia": "de:U-Bahnhof Anton-Wilhelm-Amo-Straße",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U2"
       },
       "geometry": {
         "type": "Point",
@@ -5311,7 +5466,8 @@
         "wheelchair": "yes",
         "wikidata": "Q663945",
         "wikipedia": "de:U-Bahnhof Krumme Lanke",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U3"
       },
       "geometry": {
         "type": "Point",
@@ -5353,7 +5509,8 @@
         "wheelchair": "yes",
         "wikidata": "Q800507",
         "wikipedia": "de:Bahnhof Berlin Landsberger Allee",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S41 S42 S8 S85"
       },
       "geometry": {
         "type": "Point",
@@ -5385,7 +5542,8 @@
         "wheelchair": "yes",
         "wikidata": "Q800471",
         "wikipedia": "de:Bahnhof Berlin-Friedenau",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S1"
       },
       "geometry": {
         "type": "Point",
@@ -5419,7 +5577,8 @@
         "wheelchair": "no",
         "wikidata": "Q597759",
         "wikipedia": "de:U-Bahnhof Görlitzer Bahnhof",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U1"
       },
       "geometry": {
         "type": "Point",
@@ -5442,7 +5601,8 @@
         "wheelchair": "yes",
         "wikidata": "Q657893",
         "wikipedia": "de:U-Bahnhof Klosterstraße",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U2"
       },
       "geometry": {
         "type": "Point",
@@ -5467,7 +5627,8 @@
         "wheelchair": "yes",
         "wikidata": "Q552899",
         "wikipedia": "de:U-Bahnhof Schillingstraße",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U5"
       },
       "geometry": {
         "type": "Point",
@@ -5492,7 +5653,8 @@
         "wheelchair": "yes",
         "wikidata": "Q568627",
         "wikipedia": "de:U-Bahnhof Frankfurter Tor",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U5"
       },
       "geometry": {
         "type": "Point",
@@ -5517,7 +5679,8 @@
         "wheelchair": "yes",
         "wikidata": "Q602282",
         "wikipedia": "de:U-Bahnhof Schlesisches Tor",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U1 U3"
       },
       "geometry": {
         "type": "Point",
@@ -5555,7 +5718,8 @@
         "wikidata": "Q465972",
         "wikimedia_commons": "Category:Bahnhof Berlin Westhafen",
         "wikipedia": "de:Bahnhof Berlin Westhafen",
-        "station_type": "S+U-Bahn"
+        "station_type": "S+U-Bahn",
+        "line": "S41 S42 U9"
       },
       "geometry": {
         "type": "Point",
@@ -5580,7 +5744,8 @@
         "wheelchair:description": "Aufzug nur in Richtung Warschauer Straße",
         "wikidata": "Q689797",
         "wikipedia": "de:U-Bahnhof Prinzenstraße",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U1 U3"
       },
       "geometry": {
         "type": "Point",
@@ -5604,7 +5769,8 @@
         "wheelchair": "no",
         "wikidata": "Q262168",
         "wikipedia": "de:U-Bahnhof Alt-Mariendorf",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U6"
       },
       "geometry": {
         "type": "Point",
@@ -5631,7 +5797,8 @@
         "wheelchair": "no",
         "wikidata": "Q553146",
         "wikipedia": "de:U-Bahnhof Platz der Luftbrücke",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U6"
       },
       "geometry": {
         "type": "Point",
@@ -5655,7 +5822,8 @@
         "wheelchair": "yes",
         "wikidata": "Q557562",
         "wikipedia": "de:U-Bahnhof Paracelsus-Bad",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U8"
       },
       "geometry": {
         "type": "Point",
@@ -5681,7 +5849,8 @@
         "wheelchair": "no",
         "wikidata": "Q557513",
         "wikipedia": "de:U-Bahnhof Residenzstraße",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U8"
       },
       "geometry": {
         "type": "Point",
@@ -5705,7 +5874,8 @@
         "wheelchair": "no",
         "wikidata": "Q555992",
         "wikipedia": "de:U-Bahnhof Franz-Neumann-Platz",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U8"
       },
       "geometry": {
         "type": "Point",
@@ -5743,7 +5913,8 @@
         "wheelchair:description": "11.05.2018: Aufzug defekt, kein Reparaturtermin",
         "wikidata": "Q800515",
         "wikipedia": "de:Bahnhof Berlin Wollankstraße",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S1 S25 S26"
       },
       "geometry": {
         "type": "Point",
@@ -5773,7 +5944,8 @@
         "wheelchair": "yes",
         "wikidata": "Q570906",
         "wikipedia": "de:U-Bahnhof Vinetastraße",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U2"
       },
       "geometry": {
         "type": "Point",
@@ -5798,7 +5970,8 @@
         "wheelchair": "yes",
         "wikidata": "Q559226",
         "wikipedia": "de:U-Bahnhof Kaiserin-Augusta-Straße",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U6"
       },
       "geometry": {
         "type": "Point",
@@ -5823,7 +5996,8 @@
         "wheelchair": "no",
         "wikidata": "Q554481",
         "wikipedia": "de:U-Bahnhof Westphalweg",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U6"
       },
       "geometry": {
         "type": "Point",
@@ -5852,7 +6026,8 @@
         "wheelchair": "yes",
         "wikidata": "Q819768",
         "wikipedia": "de:U-Bahnhof Kottbusser Tor",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U1 U3 U8"
       },
       "geometry": {
         "type": "Point",
@@ -5877,7 +6052,8 @@
         "wheelchair": "yes",
         "wikidata": "Q657879",
         "wikipedia": "de:U-Bahnhof Sophie-Charlotte-Platz",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U2"
       },
       "geometry": {
         "type": "Point",
@@ -5904,7 +6080,8 @@
         "wheelchair": "yes",
         "wikidata": "Q571039",
         "wikipedia": "de:U-Bahnhof Nollendorfplatz",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U1 U2 U3 U4"
       },
       "geometry": {
         "type": "Point",
@@ -5928,7 +6105,8 @@
         "wheelchair": "yes",
         "wikidata": "Q569489",
         "wikipedia": "de:U-Bahnhof Spittelmarkt",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U2"
       },
       "geometry": {
         "type": "Point",
@@ -5952,7 +6130,8 @@
         "wheelchair": "no",
         "wikidata": "Q690203",
         "wikipedia": "de:U-Bahnhof Kurfürstenstraße",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U1 U3"
       },
       "geometry": {
         "type": "Point",
@@ -5979,7 +6158,8 @@
         "wheelchair:description": "Fahrstuhl",
         "wikidata": "Q554360",
         "wikipedia": "de:U-Bahnhof Schwartzkopffstraße",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U6"
       },
       "geometry": {
         "type": "Point",
@@ -6019,7 +6199,8 @@
         "wheelchair": "yes",
         "wikidata": "Q698497",
         "wikipedia": "de:Bahnhof Berlin Alexanderplatz",
-        "station_type": "S+U-Bahn"
+        "station_type": "S+U-Bahn",
+        "line": "S3 S5 S7 S9 U2 U5 U8"
       },
       "geometry": {
         "type": "Point",
@@ -6049,7 +6230,8 @@
         "wheelchair": "no",
         "wikidata": "Q32661454",
         "wikipedia": "de:U-Bahnhof Senefelderplatz",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U2"
       },
       "geometry": {
         "type": "Point",
@@ -6074,7 +6256,8 @@
         "wheelchair": "no",
         "wikidata": "Q571019",
         "wikipedia": "de:U-Bahnhof Konstanzer Straße",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U7"
       },
       "geometry": {
         "type": "Point",
@@ -6098,7 +6281,8 @@
         "wheelchair": "yes",
         "wikidata": "Q519494",
         "wikipedia": "de:U-Bahnhof Karl-Marx-Straße",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U7"
       },
       "geometry": {
         "type": "Point",
@@ -6122,7 +6306,8 @@
         "wheelchair": "yes",
         "wikidata": "Q571485",
         "wikipedia": "de:U-Bahnhof Oranienburger Tor",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U6"
       },
       "geometry": {
         "type": "Point",
@@ -6147,7 +6332,8 @@
         "wheelchair": "yes",
         "wikidata": "Q570939",
         "wikipedia": "de:U-Bahnhof Adenauerplatz",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U7"
       },
       "geometry": {
         "type": "Point",
@@ -6173,7 +6359,8 @@
         "wheelchair": "yes",
         "wikidata": "Q557547",
         "wikipedia": "de:U-Bahnhof Cottbusser Platz",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U5"
       },
       "geometry": {
         "type": "Point",
@@ -6199,7 +6386,8 @@
         "wheelchair": "yes",
         "wikidata": "Q553140",
         "wikipedia": "de:U-Bahnhof Kaulsdorf-Nord",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U5"
       },
       "geometry": {
         "type": "Point",
@@ -6225,7 +6413,8 @@
         "wheelchair": "yes",
         "wikidata": "Q473901",
         "wikipedia": "de:U-Bahnhof Magdalenenstraße",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U5"
       },
       "geometry": {
         "type": "Point",
@@ -6251,7 +6440,8 @@
         "wheelchair": "yes",
         "wikidata": "Q556003",
         "wikipedia": "de:U-Bahnhof Neue Grottkauer Straße",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U5"
       },
       "geometry": {
         "type": "Point",
@@ -6301,7 +6491,8 @@
         "wheelchair": "yes",
         "wikidata": "Q658405",
         "wikipedia": "de:U-Bahnhof Mendelssohn-Bartholdy-Park",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U2"
       },
       "geometry": {
         "type": "Point",
@@ -6326,7 +6517,8 @@
         "wheelchair": "no",
         "wikidata": "Q704716",
         "wikipedia": "de:U-Bahnhof Möckernbrücke",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U1 U3 U7"
       },
       "geometry": {
         "type": "Point",
@@ -6352,7 +6544,8 @@
         "wheelchair": "no",
         "wikidata": "Q571380",
         "wikipedia": "de:U-Bahnhof Pankstraße",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U8"
       },
       "geometry": {
         "type": "Point",
@@ -6379,7 +6572,8 @@
         "wheelchair": "yes",
         "wikidata": "Q552891",
         "wikipedia": "de:U-Bahnhof Samariterstraße",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U5"
       },
       "geometry": {
         "type": "Point",
@@ -6404,7 +6598,8 @@
         "wheelchair": "yes",
         "wikidata": "Q550317",
         "wikipedia": "de:U-Bahnhof Hönow",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U5"
       },
       "geometry": {
         "type": "Point",
@@ -6443,7 +6638,8 @@
         "wheelchair": "yes",
         "wikidata": "Q111307724",
         "wikipedia": "de:Bahnhof Ahrensfelde",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S7"
       },
       "geometry": {
         "type": "Point",
@@ -6469,7 +6665,8 @@
         "wheelchair": "yes",
         "wikidata": "Q374881",
         "wikipedia": "de:U-Bahnhof Bülowstraße",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U2"
       },
       "geometry": {
         "type": "Point",
@@ -6493,7 +6690,8 @@
         "wheelchair": "no",
         "wikidata": "Q656523",
         "wikipedia": "de:U-Bahnhof Hausvogteiplatz",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U2"
       },
       "geometry": {
         "type": "Point",
@@ -6518,7 +6716,8 @@
         "wheelchair": "no",
         "wikidata": "Q559212",
         "wikipedia": "de:U-Bahnhof Alt-Tempelhof",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U6"
       },
       "geometry": {
         "type": "Point",
@@ -6544,7 +6743,8 @@
         "wheelchair": "yes",
         "wikidata": "Q637870",
         "wikipedia": "de:U-Bahnhof Ullsteinstraße",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U6"
       },
       "geometry": {
         "type": "Point",
@@ -6570,7 +6770,8 @@
         "wheelchair": "yes",
         "wikidata": "Q657905",
         "wikipedia": "de:U-Bahnhof Mehringdamm",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U6 U7"
       },
       "geometry": {
         "type": "Point",
@@ -6594,7 +6795,8 @@
         "wheelchair": "yes",
         "wikidata": "Q557543",
         "wikipedia": "de:U-Bahnhof Paradestraße",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U6"
       },
       "geometry": {
         "type": "Point",
@@ -6621,7 +6823,8 @@
         "surveillance": "indoor",
         "website": "https://sbahn.berlin/fahren/bahnhofsuebersicht/lichtenberg/",
         "wheelchair": "yes",
-        "station_type": "S+U-Bahn"
+        "station_type": "S+U-Bahn",
+        "line": "S5 S7 S75 U5"
       },
       "geometry": {
         "type": "Point",
@@ -6649,7 +6852,8 @@
         "wheelchair": "yes",
         "wikidata": "Q389214",
         "wikipedia": "de:U-Bahnhof Onkel Toms Hütte",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U3"
       },
       "geometry": {
         "type": "Point",
@@ -6676,7 +6880,8 @@
         "wheelchair": "yes",
         "wikidata": "Q681336",
         "wikipedia": "de:U-Bahnhof Oskar-Helene-Heim",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U3"
       },
       "geometry": {
         "type": "Point",
@@ -6702,7 +6907,8 @@
         "wheelchair": "yes",
         "wikidata": "Q571331",
         "wikipedia": "de:U-Bahnhof Thielplatz",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U3"
       },
       "geometry": {
         "type": "Point",
@@ -6727,7 +6933,8 @@
         "wheelchair": "no",
         "wikidata": "Q568224",
         "wikipedia": "de:U-Bahnhof Uhlandstraße (Berlin)",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U1"
       },
       "geometry": {
         "type": "Point",
@@ -6752,7 +6959,8 @@
         "wheelchair": "limited",
         "wikidata": "Q692727",
         "wikipedia": "de:U-Bahnhof Wittenbergplatz",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U1 U2 U3"
       },
       "geometry": {
         "type": "Point",
@@ -6830,7 +7038,8 @@
         "wheelchair": "yes",
         "wikidata": "Q666911",
         "wikipedia": "de:U-Bahnhof Blaschkoallee",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U7"
       },
       "geometry": {
         "type": "Point",
@@ -6854,7 +7063,8 @@
         "wheelchair": "no",
         "wikidata": "Q571397",
         "wikipedia": "de:U-Bahnhof Blissestraße",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U7"
       },
       "geometry": {
         "type": "Point",
@@ -6878,7 +7088,8 @@
         "wheelchair": "yes",
         "wikidata": "Q571339",
         "wikipedia": "de:U-Bahnhof Breitenbachplatz",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U3"
       },
       "geometry": {
         "type": "Point",
@@ -6913,7 +7124,8 @@
         "wheelchair": "yes",
         "wikidata": "Q737962",
         "wikipedia": "de:Bahnhof Berlin-Zehlendorf",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S1"
       },
       "geometry": {
         "type": "Point",
@@ -6938,7 +7150,8 @@
         "wheelchair": "yes",
         "wikidata": "Q662217",
         "wikipedia": "de:U-Bahnhof Osloer Straße",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U8 U9"
       },
       "geometry": {
         "type": "Point",
@@ -6972,7 +7185,8 @@
         "wheelchair": "yes",
         "wikidata": "Q4892357",
         "wikipedia": "de:Bahnhof Berlin-Biesdorf",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S5"
       },
       "geometry": {
         "type": "Point",
@@ -7004,7 +7218,8 @@
         "wheelchair": "yes",
         "wikidata": "Q7106446",
         "wikipedia": "de:Bahnhof Berlin Osdorfer Straße",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S25 S26"
       },
       "geometry": {
         "type": "Point",
@@ -7036,7 +7251,8 @@
         "wheelchair": "yes",
         "wikidata": "Q800482",
         "wikipedia": "de:Bahnhof Berlin-Lichterfelde Süd",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S25 S26"
       },
       "geometry": {
         "type": "Point",
@@ -7070,7 +7286,8 @@
         "wheelchair": "yes",
         "wikidata": "Q800511",
         "wikipedia": "de:Bahnhof Berlin-Südende",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S25 S26"
       },
       "geometry": {
         "type": "Point",
@@ -7108,7 +7325,8 @@
         "wheelchair": "yes",
         "wikidata": "Q800489",
         "wikipedia": "de:Bahnhof Berlin-Rahnsdorf",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S3"
       },
       "geometry": {
         "type": "Point",
@@ -7147,7 +7365,8 @@
         "wheelchair": "no",
         "wikidata": "Q800494",
         "wikipedia": "de:Bahnhof Berlin-Wilhelmshagen",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S3"
       },
       "geometry": {
         "type": "Point",
@@ -7181,7 +7400,8 @@
         "wheelchair": "yes",
         "wikidata": "Q800508",
         "wikipedia": "de:Bahnhof Berlin Priesterweg",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S2 S25 S26"
       },
       "geometry": {
         "type": "Point",
@@ -7213,7 +7433,8 @@
         "wheelchair": "yes",
         "wikidata": "Q4892359",
         "wikipedia": "de:Bahnhof Berlin-Buch",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S2"
       },
       "geometry": {
         "type": "Point",
@@ -7250,7 +7471,8 @@
         "wheelchair": "yes",
         "wikidata": "Q320263",
         "wikipedia": "de:Bahnhof Berlin Springpfuhl",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S7 S75"
       },
       "geometry": {
         "type": "Point",
@@ -7289,7 +7511,8 @@
         "wheelchair": "yes",
         "wikidata": "Q654980",
         "wikipedia": "de:Bahnhof Berlin-Spandau",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S3 S9"
       },
       "geometry": {
         "type": "Point",
@@ -7321,7 +7544,8 @@
         "wheelchair": "yes",
         "wikidata": "Q694848",
         "wikipedia": "de:U-Bahnhof Bundestag",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U5"
       },
       "geometry": {
         "type": "Point",
@@ -7373,7 +7597,8 @@
         "wheelchair": "yes",
         "wikidata": "Q663264",
         "wikipedia": "de:U-Bahnhof Siemensdamm",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U7"
       },
       "geometry": {
         "type": "Point",
@@ -7400,7 +7625,8 @@
         "wheelchair": "yes",
         "wikidata": "Q570954",
         "wikipedia": "de:U-Bahnhof Tierpark",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U5"
       },
       "geometry": {
         "type": "Point",
@@ -7426,7 +7652,8 @@
         "wheelchair": "yes",
         "wikidata": "Q19951075",
         "wikipedia": "nl:Jungfernheide (metrostation)",
-        "station_type": "S+U-Bahn"
+        "station_type": "S+U-Bahn",
+        "line": "S41 S42 U7"
       },
       "geometry": {
         "type": "Point",
@@ -7454,7 +7681,8 @@
         "wheelchair": "limited",
         "wikidata": "Q557558",
         "wikipedia": "de:U-Bahnhof Louis-Lewin-Straße",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U5"
       },
       "geometry": {
         "type": "Point",
@@ -7479,7 +7707,8 @@
         "wheelchair": "no",
         "wikidata": "Q571676",
         "wikipedia": "de:U-Bahnhof Hellersdorf",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U5"
       },
       "geometry": {
         "type": "Point",
@@ -7504,7 +7733,8 @@
         "wheelchair": "yes",
         "wikidata": "Q657871",
         "wikipedia": "de:U-Bahnhof Märkisches Museum",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U2"
       },
       "geometry": {
         "type": "Point",
@@ -7539,7 +7769,8 @@
         "wheelchair": "yes",
         "wikidata": "Q653775",
         "wikipedia": "de:Bahnhof Berlin-Pankow",
-        "station_type": "S+U-Bahn"
+        "station_type": "S+U-Bahn",
+        "line": "S2 S8 S85 U2"
       },
       "geometry": {
         "type": "Point",
@@ -7574,7 +7805,8 @@
         "wheelchair": "no",
         "wikidata": "Q800498",
         "wikipedia": "de:Bahnhof Berlin Botanischer Garten",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S1"
       },
       "geometry": {
         "type": "Point",
@@ -7600,7 +7832,8 @@
         "wheelchair": "yes",
         "wikidata": "Q650704",
         "wikipedia": "en:Rathaus Spandau (Berlin U-Bahn)",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U7"
       },
       "geometry": {
         "type": "Point",
@@ -7640,7 +7873,8 @@
         "wheelchair": "no",
         "wikidata": "Q4892447",
         "wikipedia": "en:Berlin Nöldnerplatz station",
-        "station_type": "S-Bahn"
+        "station_type": "S-Bahn",
+        "line": "S5 S7 S75"
       },
       "geometry": {
         "type": "Point",
@@ -7666,7 +7900,8 @@
         "wheelchair": "yes",
         "wikidata": "Q571161",
         "wikipedia": "de:U-Bahnhof Kleistpark",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U7"
       },
       "geometry": {
         "type": "Point",
@@ -7692,7 +7927,8 @@
         "wheelchair": "yes",
         "wikidata": "Q201849",
         "wikipedia": "de:U-Bahnhof Kochstraße",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U6"
       },
       "geometry": {
         "type": "Point",
@@ -7718,7 +7954,8 @@
         "wheelchair": "yes",
         "wikidata": "Q570926",
         "wikipedia": "de:U-Bahnhof Rathaus Schöneberg",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U4"
       },
       "geometry": {
         "type": "Point",
@@ -7744,7 +7981,8 @@
         "wheelchair": "yes",
         "wikidata": "Q178685",
         "wikipedia": "de:U-Bahnhof Viktoria-Luise-Platz",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U4"
       },
       "geometry": {
         "type": "Point",
@@ -7768,7 +8006,8 @@
         "wheelchair": "yes",
         "wikidata": "Q167147",
         "wikipedia": "de:U-Bahnhof Rüdesheimer Platz",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U3"
       },
       "geometry": {
         "type": "Point",
@@ -7792,7 +8031,8 @@
         "wheelchair": "yes",
         "wikidata": "Q571324",
         "wikipedia": "de:U-Bahnhof Podbielskiallee",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U3"
       },
       "geometry": {
         "type": "Point",
@@ -7815,7 +8055,8 @@
         "wheelchair": "no",
         "wikidata": "Q667035",
         "wikipedia": "de:U-Bahnhof Augsburger Straße",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U3"
       },
       "geometry": {
         "type": "Point",
@@ -7839,7 +8080,8 @@
         "wheelchair": "yes",
         "wikidata": "Q571570",
         "wikipedia": "de:U-Bahnhof Hohenzollernplatz",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U3"
       },
       "geometry": {
         "type": "Point",
@@ -7867,7 +8109,8 @@
         "wheelchair": "yes",
         "wikidata": "Q667046",
         "wikipedia": "de:U-Bahnhof Spichernstraße",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U3 U9"
       },
       "geometry": {
         "type": "Point",
@@ -7893,7 +8136,8 @@
         "wheelchair": "yes",
         "wikidata": "Q663245",
         "wikipedia": "de:U-Bahnhof Fehrbelliner Platz",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U3 U7"
       },
       "geometry": {
         "type": "Point",
@@ -7920,7 +8164,8 @@
         "wheelchair": "yes",
         "wikidata": "Q658929",
         "wikipedia": "de:U-Bahnhof Hermannplatz",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U7 U8"
       },
       "geometry": {
         "type": "Point",
@@ -7945,7 +8190,8 @@
         "wheelchair": "yes",
         "wikidata": "Q628770",
         "wikipedia": "de:U-Bahnhof Rathaus Neukölln",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U7"
       },
       "geometry": {
         "type": "Point",
@@ -7972,7 +8218,8 @@
         "wheelchair": "yes",
         "wikidata": "Q571855",
         "wikipedia": "de:U-Bahnhof Parchimer Allee",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U7"
       },
       "geometry": {
         "type": "Point",
@@ -7997,7 +8244,8 @@
         "wheelchair": "no",
         "wikidata": "Q638526",
         "wikipedia": "de:U-Bahnhof Jakob-Kaiser-Platz",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U7"
       },
       "geometry": {
         "type": "Point",
@@ -8026,7 +8274,8 @@
         "wheelchair": "yes",
         "wikidata": "Q570961",
         "wikipedia": "de:U-Bahnhof Wilmersdorfer Straße",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U7"
       },
       "geometry": {
         "type": "Point",
@@ -8051,7 +8300,8 @@
         "wheelchair": "yes",
         "wikidata": "Q663212",
         "wikipedia": "de:U-Bahnhof Zitadelle",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U7"
       },
       "geometry": {
         "type": "Point",
@@ -8076,7 +8326,8 @@
         "wheelchair": "no",
         "wikidata": "Q570943",
         "wikipedia": "de:U-Bahnhof Paulsternstraße",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U7"
       },
       "geometry": {
         "type": "Point",
@@ -8102,7 +8353,8 @@
         "wheelchair": "no",
         "wikidata": "Q571025",
         "wikipedia": "de:U-Bahnhof Halemweg",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U7"
       },
       "geometry": {
         "type": "Point",
@@ -8131,7 +8383,8 @@
         "wheelchair": "yes",
         "wikidata": "Q559249",
         "wikipedia": "de:U-Bahnhof Reinickendorfer Straße",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U6"
       },
       "geometry": {
         "type": "Point",
@@ -8155,7 +8408,8 @@
         "wheelchair": "yes",
         "wikidata": "Q658790",
         "wikipedia": "de:U-Bahnhof Rosa-Luxemburg-Platz",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U2"
       },
       "geometry": {
         "type": "Point",
@@ -8183,7 +8437,8 @@
         "wheelchair": "no",
         "wikidata": "Q571393",
         "wikipedia": "de:U-Bahnhof Mierendorffplatz",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U7"
       },
       "geometry": {
         "type": "Point",
@@ -8215,7 +8470,8 @@
         "wheelchair": "yes",
         "wikidata": "Q570916",
         "wikipedia": "de:U-Bahnhof Haselhorst",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U7"
       },
       "geometry": {
         "type": "Point",
@@ -8241,7 +8497,8 @@
         "wikidata": "Q570911",
         "wikimedia_commons": "Category:U-Bahnhof Rohrdamm (Berlin)",
         "wikipedia": "de:U-Bahnhof Rohrdamm",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U7"
       },
       "geometry": {
         "type": "Point",
@@ -8266,7 +8523,8 @@
         "wheelchair": "yes",
         "wikidata": "Q656441",
         "wikipedia": "de:U-Bahnhof Olympia-Stadion",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U2"
       },
       "geometry": {
         "type": "Point",
@@ -8290,7 +8548,8 @@
         "wheelchair": "no",
         "wikidata": "Q663204",
         "wikipedia": "de:U-Bahnhof Heinrich-Heine-Straße",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U8"
       },
       "geometry": {
         "type": "Point",
@@ -8316,7 +8575,8 @@
         "wheelchair": "yes",
         "wikidata": "Q571382",
         "wikipedia": "de:U-Bahnhof Eberswalder Straße",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U2"
       },
       "geometry": {
         "type": "Point",
@@ -8340,7 +8600,8 @@
         "wheelchair": "yes",
         "wikidata": "Q689293",
         "wikipedia": "de:U-Bahnhof Bernauer Straße",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U8"
       },
       "geometry": {
         "type": "Point",
@@ -8370,7 +8631,8 @@
         "wheelchair": "yes",
         "wikidata": "Q656090",
         "wikipedia": "de:U-Bahnhof Alt-Tegel",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U6"
       },
       "geometry": {
         "type": "Point",
@@ -8396,7 +8658,8 @@
         "wheelchair": "yes",
         "wikidata": "Q571402",
         "wikipedia": "de:U-Bahnhof Altstadt Spandau",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U7"
       },
       "geometry": {
         "type": "Point",
@@ -8420,7 +8683,8 @@
         "wheelchair": "yes",
         "wikidata": "Q571841",
         "wikipedia": "de:U-Bahnhof Wutzkyallee",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U7"
       },
       "geometry": {
         "type": "Point",
@@ -8435,7 +8699,7 @@
       "type": "Feature",
       "properties": {
         "@id": "node/8170768521",
-        "line": "U5;U6",
+        "line": "U5 U6",
         "name": "Unter den Linden",
         "operator": "Berliner Verkehrsbetriebe",
         "public_transport": "station",
@@ -8466,7 +8730,8 @@
         "subway": "yes",
         "surveillance": "indoor",
         "wheelchair": "yes",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U5"
       },
       "geometry": {
         "type": "Point",
@@ -8491,7 +8756,8 @@
         "wikidata": "Q1459924",
         "wikimedia_commons": "Category:U-Bahnhof Museumsinsel",
         "wikipedia": "en:Museumsinsel (Berlin U-Bahn)",
-        "station_type": "U-Bahn"
+        "station_type": "U-Bahn",
+        "line": "U5"
       },
       "geometry": {
         "type": "Point",

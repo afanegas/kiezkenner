@@ -228,6 +228,54 @@ const gameManager = new GameManager(map, {
 map.on('load', () => {
   mapLoaded = true;
 
+  // Create and add station icons
+  const createStationIcon = (type) => {
+    const canvas = document.createElement('canvas');
+    canvas.width = 32;
+    canvas.height = 32;
+    const ctx = canvas.getContext('2d');
+    ctx.fillStyle = '#000000';
+    
+    if (type === 'S-Bahn') {
+      ctx.beginPath();
+      ctx.arc(16, 16, 8, 0, Math.PI * 2);
+      ctx.fill();
+    } else if (type === 'U-Bahn') {
+      // Rounded square
+      const x = 8, y = 8, w = 16, h = 16, r = 4;
+      ctx.beginPath();
+      ctx.moveTo(x + r, y);
+      ctx.lineTo(x + w - r, y);
+      ctx.quadraticCurveTo(x + w, y, x + w, y + r);
+      ctx.lineTo(x + w, y + h - r);
+      ctx.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
+      ctx.lineTo(x + r, y + h);
+      ctx.quadraticCurveTo(x, y + h, x, y + h - r);
+      ctx.lineTo(x, y + r);
+      ctx.quadraticCurveTo(x, y, x + r, y);
+      ctx.closePath();
+      ctx.fill();
+    } else if (type === 'S+U-Bahn') {
+      // Left side rounded square, right side circle
+      ctx.beginPath();
+      ctx.moveTo(16, 8);
+      ctx.lineTo(12, 8);
+      ctx.quadraticCurveTo(8, 8, 8, 12);
+      ctx.lineTo(8, 20);
+      ctx.quadraticCurveTo(8, 24, 12, 24);
+      ctx.lineTo(16, 24);
+      ctx.arc(16, 16, 8, Math.PI / 2, Math.PI * 1.5, false);
+      ctx.closePath();
+      ctx.fill();
+    }
+    
+    return ctx.getImageData(0, 0, 32, 32);
+  };
+
+  map.addImage('station-sbahn-icon', createStationIcon('S-Bahn'), { sdf: true });
+  map.addImage('station-ubahn-icon', createStationIcon('U-Bahn'), { sdf: true });
+  map.addImage('station-subahn-icon', createStationIcon('S+U-Bahn'), { sdf: true });
+
   // Add sources
   map.addSource('bezirke', { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
   map.addSource('radius-circle', { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
@@ -337,12 +385,12 @@ map.on('load', () => {
     }
   });
 
-  // KiezKenner Point Layer (for circles: Quartiere, Bahnhöfe)
+  // KiezKenner Point Layer (for circles: Quartiere or others without station_type)
   map.addLayer({
     id: 'kiezkenner-point-layer',
     type: 'circle',
     source: 'kiezkenner-source',
-    filter: ['==', '$type', 'Point'],
+    filter: ['all', ['==', '$type', 'Point'], ['!', ['has', 'station_type']]],
     paint: {
       'circle-radius': [
         'case',
@@ -358,14 +406,70 @@ map.on('load', () => {
         ['==', ['feature-state', 'state'], 'red'], '#ef4444',
         ['boolean', ['feature-state', 'hover'], false], '#1e3a8a',
         ['boolean', ['feature-state', 'selected'], false], '#1e3a8a',
-        // Default colors based on station type (only for Bahnhöfe mode)
-        ['==', ['get', 'station_type'], 'S-Bahn'], '#166534',
-        ['==', ['get', 'station_type'], 'U-Bahn'], '#3b82f6',
-        ['==', ['get', 'station_type'], 'S+U-Bahn'], '#0d9488', // Blend S-bahn/U-bahn
         '#3b82f6' // Default point color (for Quartiere or others)
       ],
       'circle-stroke-width': 2,
       'circle-stroke-color': '#ffffff'
+    }
+  });
+
+  // KiezKenner Station Background Layer (soft glow behind hovered/selected/answered stations)
+  map.addLayer({
+    id: 'kiezkenner-point-bg-layer',
+    type: 'circle',
+    source: 'kiezkenner-source',
+    filter: ['all', ['==', '$type', 'Point'], ['has', 'station_type']],
+    paint: {
+      'circle-radius': [
+        'case',
+        ['boolean', ['feature-state', 'hover'], false], 14,
+        ['boolean', ['feature-state', 'selected'], false], 14,
+        ['!=', ['feature-state', 'state'], null], 11,
+        0
+      ],
+      'circle-color': [
+        'case',
+        ['==', ['feature-state', 'state'], 'green'], '#10b981',
+        ['==', ['feature-state', 'state'], 'orange'], '#f59e0b',
+        ['==', ['feature-state', 'state'], 'red'], '#ef4444',
+        '#3b82f6' // Hover/selection color
+      ],
+      'circle-opacity': [
+        'case',
+        ['!=', ['feature-state', 'state'], null], 0.25,
+        0.4
+      ]
+    }
+  });
+
+  // KiezKenner Station Icon Layer (rendered as custom SDF symbols)
+  map.addLayer({
+    id: 'kiezkenner-station-layer',
+    type: 'symbol',
+    source: 'kiezkenner-source',
+    filter: ['all', ['==', '$type', 'Point'], ['has', 'station_type']],
+    layout: {
+      'icon-image': [
+        'case',
+        ['==', ['get', 'station_type'], 'S-Bahn'], 'station-sbahn-icon',
+        ['==', ['get', 'station_type'], 'U-Bahn'], 'station-ubahn-icon',
+        'station-subahn-icon'
+      ],
+      'icon-allow-overlap': true,
+      'icon-ignore-placement': true
+    },
+    paint: {
+      'icon-color': [
+        'case',
+        ['==', ['feature-state', 'state'], 'green'], '#10b981',
+        ['==', ['feature-state', 'state'], 'orange'], '#f59e0b',
+        ['==', ['feature-state', 'state'], 'red'], '#ef4444',
+        ['boolean', ['feature-state', 'hover'], false], '#1e3a8a',
+        ['boolean', ['feature-state', 'selected'], false], '#1e3a8a',
+        ['get', 'line_color']
+      ],
+      'icon-halo-color': '#ffffff',
+      'icon-halo-width': 2
     }
   });
 
@@ -441,7 +545,7 @@ function setupMapInteractions() {
       [point.x - CLICK_TOLERANCE, point.y - CLICK_TOLERANCE],
       [point.x + CLICK_TOLERANCE, point.y + CLICK_TOLERANCE]
     ];
-    const layers = ['kiezkenner-fill-layer', 'kiezkenner-line-layer', 'kiezkenner-point-layer'].filter(l => map.getLayer(l));
+    const layers = ['kiezkenner-fill-layer', 'kiezkenner-line-layer', 'kiezkenner-point-layer', 'kiezkenner-station-layer'].filter(l => map.getLayer(l));
     const features = map.queryRenderedFeatures(bbox, { layers });
     if (features.length === 0) return null;
     
