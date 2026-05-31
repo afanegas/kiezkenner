@@ -418,6 +418,7 @@ map.on('load', () => {
     id: 'kiezkenner-point-bg-layer',
     type: 'circle',
     source: 'kiezkenner-source',
+    minzoom: 12.5,
     filter: ['all', ['==', '$type', 'Point'], ['has', 'station_type']],
     paint: {
       'circle-radius': [
@@ -447,6 +448,7 @@ map.on('load', () => {
     id: 'kiezkenner-station-layer',
     type: 'symbol',
     source: 'kiezkenner-source',
+    minzoom: 12.5,
     filter: ['all', ['==', '$type', 'Point'], ['has', 'station_type']],
     layout: {
       'icon-image': [
@@ -470,6 +472,35 @@ map.on('load', () => {
       ],
       'icon-halo-color': '#ffffff',
       'icon-halo-width': 2
+    }
+  });
+
+  // KiezKenner Station Circle Layer (rendered as simple circles when zoomed out)
+  map.addLayer({
+    id: 'kiezkenner-station-circle-layer',
+    type: 'circle',
+    source: 'kiezkenner-source',
+    maxzoom: 12.5,
+    filter: ['all', ['==', '$type', 'Point'], ['has', 'station_type']],
+    paint: {
+      'circle-radius': [
+        'case',
+        ['boolean', ['feature-state', 'hover'], false], 8,
+        ['boolean', ['feature-state', 'selected'], false], 8,
+        ['!=', ['feature-state', 'state'], null], 6,
+        4.5 // Default circle radius when zoomed out
+      ],
+      'circle-color': [
+        'case',
+        ['==', ['feature-state', 'state'], 'green'], '#10b981',
+        ['==', ['feature-state', 'state'], 'orange'], '#f59e0b',
+        ['==', ['feature-state', 'state'], 'red'], '#ef4444',
+        ['boolean', ['feature-state', 'hover'], false], '#1e3a8a',
+        ['boolean', ['feature-state', 'selected'], false], '#1e3a8a',
+        ['get', 'line_color']
+      ],
+      'circle-stroke-width': 1.5,
+      'circle-stroke-color': '#ffffff'
     }
   });
 
@@ -545,7 +576,7 @@ function setupMapInteractions() {
       [point.x - CLICK_TOLERANCE, point.y - CLICK_TOLERANCE],
       [point.x + CLICK_TOLERANCE, point.y + CLICK_TOLERANCE]
     ];
-    const layers = ['kiezkenner-fill-layer', 'kiezkenner-line-layer', 'kiezkenner-point-layer', 'kiezkenner-station-layer'].filter(l => map.getLayer(l));
+    const layers = ['kiezkenner-fill-layer', 'kiezkenner-line-layer', 'kiezkenner-point-layer', 'kiezkenner-station-layer', 'kiezkenner-station-circle-layer'].filter(l => map.getLayer(l));
     const features = map.queryRenderedFeatures(bbox, { layers });
     if (features.length === 0) return null;
     
