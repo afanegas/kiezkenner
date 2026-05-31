@@ -3,6 +3,11 @@ import { pointEngine } from './engines/pointEngine.js';
 import { streetEngine } from './engines/streetEngine.js';
 import { GameManager } from './game.js';
 
+// Zoom threshold for transitioning between simple station circles and custom shapes/icons.
+// Zoom values below this threshold will render circles; zoom values at or above will render custom shapes.
+// Adjust this parameter to control the transition zoom level.
+export const STATION_ZOOM_THRESHOLD = 11.5;
+
 // Premium and vibrant colors for the 12 Bezirke
 const bezirkColors = {
   "Mitte": "#FF3366",
@@ -418,7 +423,7 @@ map.on('load', () => {
     id: 'kiezkenner-point-bg-layer',
     type: 'circle',
     source: 'kiezkenner-source',
-    minzoom: 12.5,
+    minzoom: STATION_ZOOM_THRESHOLD,
     filter: ['all', ['==', '$type', 'Point'], ['has', 'station_type']],
     paint: {
       'circle-radius': [
@@ -448,7 +453,7 @@ map.on('load', () => {
     id: 'kiezkenner-station-layer',
     type: 'symbol',
     source: 'kiezkenner-source',
-    minzoom: 12.5,
+    minzoom: STATION_ZOOM_THRESHOLD,
     filter: ['all', ['==', '$type', 'Point'], ['has', 'station_type']],
     layout: {
       'icon-image': [
@@ -480,7 +485,7 @@ map.on('load', () => {
     id: 'kiezkenner-station-circle-layer',
     type: 'circle',
     source: 'kiezkenner-source',
-    maxzoom: 12.5,
+    maxzoom: STATION_ZOOM_THRESHOLD,
     filter: ['all', ['==', '$type', 'Point'], ['has', 'station_type']],
     paint: {
       'circle-radius': [
