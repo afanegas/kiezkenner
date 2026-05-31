@@ -6,7 +6,7 @@ import { GameManager } from './game.js';
 // Zoom threshold for transitioning between simple station circles and custom shapes/icons.
 // Zoom values below this threshold will render circles; zoom values at or above will render custom shapes.
 // Adjust this parameter to control the transition zoom level.
-export const STATION_ZOOM_THRESHOLD = 11.5;
+export const STATION_ZOOM_THRESHOLD = 10.5;
 
 // Premium and vibrant colors for the 12 Bezirke
 const bezirkColors = {
@@ -207,11 +207,11 @@ const gameManager = new GameManager(map, {
   onTargetPicked(targetName, currentProgress, totalProgress) {
     targetNameEl.textContent = targetName;
     progressTextEl.textContent = `${currentProgress}/${totalProgress}`;
-    
+
     // Reset heart dots
     dots.forEach(d => d.classList.remove('lost'));
   },
-  
+
   onAttemptResult(isCorrect, attempts, clickedName) {
     if (!isCorrect) {
       if (attempts <= 3) {
@@ -219,7 +219,7 @@ const gameManager = new GameManager(map, {
       }
     }
   },
-  
+
   onGameFinished(stats, formattedTime) {
     document.getElementById('stat-time').textContent = formattedTime;
     document.getElementById('stat-green').textContent = stats.green;
@@ -240,7 +240,7 @@ map.on('load', () => {
     canvas.height = 32;
     const ctx = canvas.getContext('2d');
     ctx.fillStyle = '#000000';
-    
+
     if (type === 'S-Bahn') {
       ctx.beginPath();
       ctx.arc(16, 16, 8, 0, Math.PI * 2);
@@ -273,7 +273,7 @@ map.on('load', () => {
       ctx.closePath();
       ctx.fill();
     }
-    
+
     return ctx.getImageData(0, 0, 32, 32);
   };
 
@@ -284,8 +284,8 @@ map.on('load', () => {
   // Add sources
   map.addSource('bezirke', { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
   map.addSource('radius-circle', { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
-  map.addSource('kiezkenner-source', { 
-    type: 'geojson', 
+  map.addSource('kiezkenner-source', {
+    type: 'geojson',
     data: { type: 'FeatureCollection', features: [] },
     promoteId: 'name' // Use promoted name ID so split features are styled in sync
   });
@@ -584,13 +584,13 @@ function setupMapInteractions() {
     const layers = ['kiezkenner-fill-layer', 'kiezkenner-line-layer', 'kiezkenner-point-layer', 'kiezkenner-station-layer', 'kiezkenner-station-circle-layer'].filter(l => map.getLayer(l));
     const features = map.queryRenderedFeatures(bbox, { layers });
     if (features.length === 0) return null;
-    
+
     // Prioritize direct hits on polygon fills
     const fillHits = features.filter(f => f.layer.id === 'kiezkenner-fill-layer');
     if (fillHits.length > 0) {
       return fillHits[0];
     }
-    
+
     if (features.length === 1) return features[0];
 
     let closest = null;
@@ -620,7 +620,7 @@ function setupMapInteractions() {
         }
         hoveredFeatureId = id;
         map.setFeatureState({ source: 'kiezkenner-source', id: hoveredFeatureId }, { hover: true });
-        
+
         if (appState.mode === 'lernen') {
           updateHeaderInfo(feature.properties.name, feature.properties.BEZIRK || 'Unbekannt');
         }
@@ -650,12 +650,12 @@ function setupMapInteractions() {
     } else {
       map.getCanvas().style.cursor = '';
       customTooltip.classList.remove('visible');
-      
+
       if (hoveredFeatureId !== null) {
         map.setFeatureState({ source: 'kiezkenner-source', id: hoveredFeatureId }, { hover: false });
         hoveredFeatureId = null;
       }
-      
+
       if (appState.mode === 'lernen') {
         if (selectedFeatureId !== null) {
           updateHeaderInfo(selectedFeatureId, getBezirkForFeatureName(selectedFeatureId));
@@ -684,7 +684,7 @@ function setupMapInteractions() {
     const feature = getFeatureAtPoint(e.point);
     if (feature) {
       const clickedName = feature.properties.name;
-      
+
       if (appState.mode === 'lernen') {
         if (selectedFeatureId !== null) {
           map.setFeatureState({ source: 'kiezkenner-source', id: selectedFeatureId }, { selected: false });
@@ -694,7 +694,7 @@ function setupMapInteractions() {
         updateHeaderInfo(clickedName, feature.properties.BEZIRK || 'Unbekannt');
       } else {
         customTooltip.classList.remove('visible');
-        
+
         // Let GameManager process the click guess
         const showNames = toggleErrorNames.checked;
         const showNamesOnAnswered = toggleHoverRed.checked;
@@ -719,8 +719,8 @@ function updateHeaderInfo(name, bezirk) {
 
 function resetHeaderInfo() {
   bezirkTitleEl.textContent = "Berlin";
-  ortsteilNameEl.textContent = appState.gameMode === 'streets' 
-    ? 'Wähle eine Straße' 
+  ortsteilNameEl.textContent = appState.gameMode === 'streets'
+    ? 'Wähle eine Straße'
     : (appState.gameMode === 'stations' ? 'Wähle einen Bahnhof' : 'Wähle einen Ortsteil');
   bezirkTitleEl.style.color = '#A5B4FC';
   bezirkTitleEl.style.background = 'none';
@@ -730,35 +730,35 @@ function resetHeaderInfo() {
 // Data Loader orchestration
 async function loadGameModeDataset() {
   if (!mapLoaded) return;
-  
+
   // Clear radius circle layer if not in streets radius mode
   if ((appState.gameMode !== 'streets' || appState.region !== 'radius') && map.getSource('radius-circle')) {
     map.getSource('radius-circle').setData({ type: 'FeatureCollection', features: [] });
   }
-  
+
   ortsteilNameEl.textContent = "Lade Daten...";
-  
+
   try {
     let geojson;
     if (appState.gameMode === 'ortsteile' || appState.gameMode === 'plr') {
       geojson = await polygonEngine.loadData(
-        appState.gameMode, 
-        appState.region, 
-        appState.customTargets, 
+        appState.gameMode,
+        appState.region,
+        appState.customTargets,
         regionMap
       );
     } else if (appState.gameMode === 'quartier' || appState.gameMode === 'stations') {
       geojson = await pointEngine.loadData(
-        appState.gameMode, 
-        appState.region, 
-        appState.customTargets, 
+        appState.gameMode,
+        appState.region,
+        appState.customTargets,
         regionMap
       );
     } else if (appState.gameMode === 'streets') {
       geojson = await streetEngine.loadData(
-        appState.region, 
-        appState.difficulty, 
-        appState.radiusMode, 
+        appState.region,
+        appState.difficulty,
+        appState.radiusMode,
         appState.customGeojson,
         map
       );
@@ -774,7 +774,7 @@ async function loadGameModeDataset() {
     map.getSource('kiezkenner-source').setData(geojson);
 
     fitMapToBounds();
-    
+
     // If game is in progress, restart or resume
     if (appState.mode === 'spielen') {
       resumeSpielenMode();
@@ -792,7 +792,7 @@ function fitMapToBounds() {
   if (!mapLoaded || !activeGeojsonData || activeGeojsonData.features.length === 0) return;
 
   let minLng = 180, minLat = 90, maxLng = -180, maxLat = -90;
-  
+
   activeGeojsonData.features.forEach(f => {
     const processCoord = (coord) => {
       if (coord[0] < minLng) minLng = coord[0];
@@ -800,7 +800,7 @@ function fitMapToBounds() {
       if (coord[1] < minLat) minLat = coord[1];
       if (coord[1] > maxLat) maxLat = coord[1];
     };
-    
+
     if (f.geometry.type === 'Point') {
       processCoord(f.geometry.coordinates);
     } else if (f.geometry.type === 'LineString') {
@@ -820,18 +820,18 @@ function fitMapToBounds() {
 // Build dropdown select items based on active gameMode
 function populateRegionSelect(rawFeatures, gameMode) {
   regionSelect.innerHTML = '';
-  
+
   if (gameMode === 'streets') {
     const optRadius = document.createElement('option');
     optRadius.value = 'radius';
     optRadius.textContent = 'Umkreis (Radius)';
     regionSelect.appendChild(optRadius);
-    
+
     const optCustom = document.createElement('option');
     optCustom.value = 'custom';
     optCustom.textContent = 'Eigene Karte';
     regionSelect.appendChild(optCustom);
-    
+
     Object.keys(regionDisplayNames).forEach(key => {
       const opt = document.createElement('option');
       opt.value = key;
@@ -839,33 +839,33 @@ function populateRegionSelect(rawFeatures, gameMode) {
       regionSelect.appendChild(opt);
     });
   } else {
-    const typeName = gameMode === 'ortsteile' ? 'Ortsteile' : 
-                     (gameMode === 'plr' ? 'PLR' : 
-                     (gameMode === 'quartier' ? 'Quartiere' : 'Bahnhöfe'));
-                     
+    const typeName = gameMode === 'ortsteile' ? 'Ortsteile' :
+      (gameMode === 'plr' ? 'PLR' :
+        (gameMode === 'quartier' ? 'Quartiere' : 'Bahnhöfe'));
+
     const optAlle = document.createElement('option');
     optAlle.value = 'alle';
     optAlle.textContent = `alle ${rawFeatures.length} ${typeName}`;
     regionSelect.appendChild(optAlle);
-    
+
     if (gameMode !== 'stations') {
       const optCustom = document.createElement('option');
       optCustom.value = 'custom';
       optCustom.textContent = 'Benutzerdefiniert';
       regionSelect.appendChild(optCustom);
     }
-    
+
     Object.keys(regionDisplayNames).forEach(key => {
       const bezirkeNames = regionMap[key];
       const count = rawFeatures.filter(f => bezirkeNames.includes(f.properties.BEZIRK)).length;
-      
+
       const opt = document.createElement('option');
       opt.value = key;
       opt.textContent = `${count} ${typeName} - ${regionDisplayNames[key]}`;
       regionSelect.appendChild(opt);
     });
   }
-  
+
   // Keep active region selection if available in options, otherwise default
   const values = Array.from(regionSelect.options).map(o => o.value);
   if (values.includes(appState.region)) {
@@ -880,19 +880,19 @@ function populateRegionSelect(rawFeatures, gameMode) {
 function rebuildCustomFilter() {
   const names = Array.from(new Set(rawFeaturesCache.map(f => f.properties.name))).sort();
   filterCheckboxesContainer.innerHTML = '';
-  
+
   names.forEach(name => {
     const lbl = document.createElement('label');
     lbl.style.display = 'flex';
     lbl.style.alignItems = 'center';
     lbl.style.cursor = 'pointer';
-    
+
     const cb = document.createElement('input');
     cb.type = 'checkbox';
     cb.value = name;
     cb.style.marginRight = '6px';
     cb.checked = appState.customTargets.includes(name);
-    
+
     cb.addEventListener('change', () => {
       if (cb.checked) {
         if (!appState.customTargets.includes(name)) appState.customTargets.push(name);
@@ -901,7 +901,7 @@ function rebuildCustomFilter() {
       }
       updateExportString();
     });
-    
+
     lbl.appendChild(cb);
     lbl.appendChild(document.createTextNode(name));
     filterCheckboxesContainer.appendChild(lbl);
@@ -916,7 +916,7 @@ function updateExportString() {
 // Mode Switches
 function switchMode(mode) {
   appState.mode = mode;
-  
+
   if (mode === 'lernen') {
     btnLernen.classList.add('active');
     btnSpielen.classList.remove('active');
@@ -967,14 +967,14 @@ function adaptSettingsMenu() {
   difficultySettingGroup.classList.toggle('hidden', !isStreets);
   mapStyleSettingGroup.classList.toggle('hidden', !isStreets);
   toggleHoverRedGroup.classList.toggle('hidden', false);
-  
+
   // Update radius config visibility
   radiusConfig.classList.toggle('hidden', !isStreets || appState.region !== 'radius');
-  
+
   // Show / Hide filter config button based on mode and selection
   const showFilterConfig = appState.region === 'custom' && appState.gameMode !== 'stations';
   btnConfigFilter.classList.toggle('hidden', !showFilterConfig);
-  
+
   // Enable / Disable difficulty select in Custom mode
   const isCustom = appState.region === 'custom';
   difficultySelect.disabled = isCustom;
@@ -1030,26 +1030,26 @@ document.addEventListener('click', (e) => {
 regionSelect.addEventListener('change', () => {
   appState.region = regionSelect.value;
   appState.radiusMode.active = (appState.region === 'radius');
-  
+
   adaptSettingsMenu();
-  
+
   if (appState.region === 'custom' && appState.gameMode !== 'stations') {
     // Open modal directly when custom is selected
     settingsMenu.classList.add('hidden');
     openFilterModal();
   }
-  
+
   if (appState.region === 'radius' && appState.gameMode === 'streets') {
     appState.radiusMode.isSelectingCenter = true;
     appState.radiusMode.hasCenter = false;
     map.getCanvas().style.cursor = 'crosshair';
     btnSelectCenter.textContent = "Klicke auf die Karte...";
     btnSelectCenter.style.backgroundColor = "#f59e0b"; // Orange alert highlight
-    
+
     // Clear map layers for radius configuration
     map.getSource('kiezkenner-source').setData({ type: 'FeatureCollection', features: [] });
     map.getSource('radius-circle').setData({ type: 'FeatureCollection', features: [] });
-    
+
     ortsteilNameEl.textContent = "Wähle ein Zentrum auf der Karte...";
     bezirkTitleEl.textContent = "Umkreis-Modus";
     bezirkTitleEl.style.color = '#A5B4FC';
@@ -1060,7 +1060,7 @@ regionSelect.addEventListener('change', () => {
     map.getCanvas().style.cursor = '';
     btnSelectCenter.textContent = "Zentrum auf Karte wählen";
     btnSelectCenter.style.backgroundColor = "";
-    
+
     // Load data for the selected region
     gameManager.inProgress = false;
     loadGameModeDataset();
@@ -1123,16 +1123,16 @@ gameModeBtns.forEach(btn => {
   btn.addEventListener('click', (e) => {
     gameModeBtns.forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
-    
+
     appState.gameMode = btn.getAttribute('data-gamemode');
-    
+
     // Clear and adjust state variables
     appState.region = appState.gameMode === 'streets' ? 'radius' : 'alle';
     appState.radiusMode.active = (appState.region === 'radius');
     appState.radiusMode.isSelectingCenter = false;
     appState.radiusMode.hasCenter = true; // default center on Alex active
     appState.customTargets = [];
-    
+
     adaptSettingsMenu();
     gameManager.inProgress = false;
     loadGameModeDataset();
@@ -1147,7 +1147,7 @@ btnConfigFilter.addEventListener('click', () => {
 
 function openFilterModal() {
   filterModal.classList.remove('hidden');
-  
+
   if (appState.gameMode === 'streets') {
     filterModalTitle.textContent = "Eigene Straßenkarte";
     streetUploadUi.classList.remove('hidden');
@@ -1170,7 +1170,7 @@ btnSaveFilter.addEventListener('click', () => {
 filterFileUpload.addEventListener('change', (e) => {
   const file = e.target.files[0];
   if (!file) return;
-  
+
   const reader = new FileReader();
   reader.onload = (evt) => {
     try {
@@ -1178,9 +1178,9 @@ filterFileUpload.addEventListener('change', (e) => {
       if (geojson.type === 'FeatureCollection') {
         appState.customGeojson = geojson;
         filterUploadStatus.style.display = 'block';
-        
-        setTimeout(() => { 
-          filterUploadStatus.style.display = 'none'; 
+
+        setTimeout(() => {
+          filterUploadStatus.style.display = 'none';
           filterModal.classList.add('hidden');
           gameManager.inProgress = false;
           loadGameModeDataset();
