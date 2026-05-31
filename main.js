@@ -269,7 +269,7 @@ map.on('load', () => {
       ctx.lineTo(8, 20);
       ctx.quadraticCurveTo(8, 24, 12, 24);
       ctx.lineTo(16, 24);
-      ctx.arc(16, 16, 8, Math.PI / 2, Math.PI * 1.5, false);
+      ctx.arc(16, 16, 8, Math.PI / 2, Math.PI * 1.5, true);
       ctx.closePath();
       ctx.fill();
     }
